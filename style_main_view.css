@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  align-content: flex-start;
+}
+
+body {
+  justify-content: center;
+}
+
+@media (max-width: 380px) {
+  .background_main {
+    background-image: url(images/header-illsutration-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0;
+    align-items: center;
+  }
+
+  .background_main h1 {
+    width: 327px;
+    height: 192px;
+    font-weight: 700px;
+    line-height: 52px;
+    margin: 0;
+    margin-bottom: 12%;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .background_main p {
+    width: 327px;
+    height: 164px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 11%;
+  }
+
+  .row_down {
+    height: 6%;
+    margin-top: 9%;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    justify-content: space-around;
+  }
+
+  .taskbar {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .taskbar span {
+    flex-grow: 1;
+    font-weight: bold;
+    margin-left: 10%;
+  }
+
+  .taskbar img {
+    height: 100%;
+    width: 5%;
+    margin-right: 2%;
+  }
+
+  .menu {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+  }
+
+  .menu span {
+    color: #28352f;
+    margin-left: 9%;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu img {
+    margin-right: 10px;
+    margin-right: 6%;
+  }
+
+  .background_main h1 span {
+    color: rgb(22, 161, 57);
+  }
+
+  .social_media_icons {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    margin-left: 6%;
+  }
+
+  .social_media_icons > * {
+    height: 27%;
+    margin-right: 6%;
+  }
+}
