@@ -220,13 +220,16 @@ header {
 
 .tools button {
   height: 32px;
-  background-color: #d9e0de;
+  background-color:#eef8f3;
   color: black;
   border: 0;
   border-radius: 4px;
   padding: 8px, 12px, 8px, 12px;
   font-family: 'Inter UI', sans-serif;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .works_buttons li button:active {
@@ -560,6 +563,7 @@ header {
   font-size: 17px;
   letter-spacing: 3%;
   margin-top: 2%;
+  cursor: pointer;
 }
 
 .about_me {
@@ -572,7 +576,7 @@ header {
   color: #172b4d;
 }
 
-.about_main h2 {
+.about_main p {
   height: 189px;
   font-style: normal;
   font-family: 'Inter UI', sans-serif;
@@ -583,15 +587,6 @@ header {
   font-weight: 4700;
   color: #42526e;
   margin-top: 0;
-}
-
-.about_button:active {
-  color: red;
-}
-
-.about_button:hover {
-  background-color: rgb(42, 145, 42);
-  cursor: pointer;
 }
 
 /* opinion */
@@ -612,7 +607,7 @@ header {
   line-height: 52px;
 }
 
-.opinion_section h1 {
+.opinion_section h2 {
   font-size: 40px;
   line-height: 52px;
   font-family: 'Inter UI', sans-serif;
@@ -681,15 +676,6 @@ header {
 .form_section textarea {
   width: 325px;
   height: 114px;
-}
-
-.form_button:active {
-  color: red;
-}
-
-.form_button:hover {
-  background-color: rgb(42, 145, 42);
-  cursor: pointer;
 }
 
 /* contact info */
