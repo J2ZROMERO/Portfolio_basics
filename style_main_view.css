@@ -649,6 +649,11 @@ header {
   padding-left: 10px;
 }
 
+.form_button_li {
+  display: flex;
+  justify-content: center;
+}
+
 .textarea::placeholder {
   font-family: 'Inter';
   font-style: normal;
@@ -751,4 +756,10 @@ svg line {
   stroke: black;
   stroke-width: 7;
   color: #e5e5e5;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
