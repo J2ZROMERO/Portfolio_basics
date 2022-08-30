@@ -130,7 +130,7 @@ header {
   font-family: 'Inter UI', sans-serif;
 }
 
-.social_media_icons>* {
+.social_media_icons > * {
   height: 27%;
   margin-right: 6%;
 }
@@ -200,7 +200,7 @@ header {
   justify-content: space-around;
 }
 
-.works_buttons>* {
+.works_buttons > * {
   list-style: none;
 }
 
@@ -341,7 +341,7 @@ header {
   align-content: start;
 }
 
-.languages_buttons>* {
+.languages_buttons > * {
   list-style: none;
   padding: 4px;
 }
@@ -424,7 +424,7 @@ header {
   align-content: start;
 }
 
-.framework_buttons>* {
+.framework_buttons > * {
   list-style: none;
   padding: 4px;
 }
@@ -511,7 +511,7 @@ header {
   align-content: start;
 }
 
-.skills_buttons>* {
+.skills_buttons > * {
   list-style: none;
   padding: 4px;
 }
@@ -640,7 +640,7 @@ header {
 }
 
 .form_input::placeholder {
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif !important;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -655,12 +655,12 @@ header {
 }
 
 .textarea::placeholder {
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif !important;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .textarea:hover {
