@@ -636,10 +636,26 @@ header {
   height: 352px;
   display: flex;
   flex-direction: column;
-  border-radius: 11px;
-  line-height: 52px;
-  justify-content: space-between;
   align-items: center;
+}
+
+.form_input::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+  padding-left: 10px;
+}
+
+.textarea::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px; 
+  color: #091E42;
 }
 
 .form_input,
