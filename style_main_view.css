@@ -135,7 +135,7 @@ header {
   margin-right: 6%;
 }
 
-.social_media_icons > *:hover {
+.scale:hover {
   transform: scale(1.2);
 }
 
@@ -204,7 +204,7 @@ header {
   justify-content: space-around;
 }
 
-.works_buttons > * {
+.tools {
   list-style: none;
 }
 
@@ -346,7 +346,7 @@ header {
   align-content: start;
 }
 
-.languages_buttons > * {
+.tools_languages {
   list-style: none;
   padding: 4px;
 }
@@ -429,7 +429,7 @@ header {
   align-content: start;
 }
 
-.framework_buttons > * {
+.tools_frame {
   list-style: none;
   padding: 4px;
 }
@@ -516,7 +516,7 @@ header {
   align-content: start;
 }
 
-.skills_buttons > * {
+.tools_skill {
   list-style: none;
   padding: 4px;
 }
