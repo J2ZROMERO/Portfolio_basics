@@ -135,6 +135,10 @@ header {
   margin-right: 6%;
 }
 
+.social_media_icons > *:hover {
+  transform: scale(1.2);
+}
+
 /* start middle content */
 
 .welcome_view {
@@ -270,6 +274,7 @@ header {
 .see_project:hover {
   background-color: rgb(25, 129, 25);
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 /* languages */
