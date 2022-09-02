@@ -1140,7 +1140,6 @@
     letter-spacing: 0.03em;
     color: #36b37e;
     border-style: none;
-    
   }
 
   .about_section {
@@ -1370,41 +1369,50 @@
   .divisor {
     height: 1px;
   }
-  .rock{
+
+  .rock {
     margin: -21% 0% 0% 23%;
   }
-  .cube{
+
+  .cube {
     margin: -32% 0% 0% 0%;
   }
-  .vertical_rectangle{
+
+  .vertical_rectangle {
     margin: -40% 0% 0% 84%;
   }
-  .bird{
+
+  .bird {
     margin: -118% 0% 0% 84%;
   }
-  .boat{
+
+  .boat {
     margin: -101% 0% 0% 0%;
   }
-  .see_project:hover{
-    background-color: #36B37F;
+
+  .see_project:hover {
+    background-color: #36b37f;
     cursor: pointer;
-    
   }
-  .see_project:active ,about_button:hover {
+
+  .see_project:active,
+  .about_button:hover {
     background-color: #008552;
-    
   }
+
   .works_buttons li button:active {
     color: red;
   }
+
   .button_languages:hover,
   .button_frame:hover,
   .button_skills:hover {
     background-color: #b3c2be;
     cursor: pointer;
   }
-.tools button:hover{
-  cursor: pointer;
-background-color: #b3c2be;
-}
+
+  .button_work:hover {
+    cursor: pointer;
+    background-color: #b3c2be;
+  }
 }
