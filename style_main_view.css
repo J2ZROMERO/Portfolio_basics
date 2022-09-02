@@ -130,7 +130,7 @@ header {
   font-family: 'Inter UI', sans-serif;
 }
 
-.social_media_icons > * {
+.social_media_icons>* {
   height: 27%;
   margin-right: 6%;
 }
