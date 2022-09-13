@@ -4,6 +4,71 @@
     font-family: "Inter", sans-serif !important;
   }
 
+  .quick_acces {
+    display: none;
+    width: 375px;
+    height: 755px;
+    background-color: #e2edff;
+    border-radius: 0% 0% 10% 9%;
+  }
+
+  .ul_quick_acces {
+    list-style: none;
+    padding: 0;
+    background-color: blue;
+    border-radius: 0 0 10% 10%;
+  }
+
+  .botton_line {
+    margin-top: 15%;
+  }
+
+  .menu_hamburguer {
+    cursor: pointer;
+  }
+
+  .close {
+    text-align: end;
+    font-family: 'Inter UI', sans-serif;
+    font-size: 2em;
+    margin-right: 8%;
+    margin-top: 9%;
+    cursor: pointer;
+  }
+
+  .portfolio_go,
+  .about_go,
+  .contact_go {
+    font-family: 'Inter UI', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 12%;
+    margin-left: 6%;
+    cursor: pointer;
+  }
+
+  .wrap_quick_acces {
+    width: 375px;
+    height: 810px;
+    background-color: lightsteelblue;
+    margin: 0;
+    padding: 0;
+  }
+
+  .portafolio_go,
+  .about_go,
+  .contact_go {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    font-family: "Inter", sans-serif !important;
+    color: #3a4a42;
+    margin: 10% 0 0 5%;
+  }
+
   .menu_items,
   .desktop_version {
     display: none;
@@ -19,7 +84,7 @@
   .mobile_version {
     display: grid;
     grid-template-columns: 380px;
-    grid-template-rows: 730px 300px repeat(6, 500px) 500px 403px 380px 425px 410px;
+    grid-template-rows: 730px 300px repeat(6, 500px) 500px 403px 380px 425px 410px 489px 875px;
   }
 
   .background_main {
@@ -66,13 +131,16 @@
   }
 
   header {
-    width: 100%;
+    width: 378px;
     display: flex;
     flex-direction: column;
-    height: 10%;
+    height: 7%;
     justify-content: space-around;
     font-weight: bold;
+    margin-top: -2%;
     font-family: 'Inter UI', sans-serif;
+    position: fixed;
+    background-color: white;
   }
 
   .taskbar {
@@ -146,6 +214,7 @@
   .welcome_view {
     margin: 0;
     width: 100%;
+    margin-top: 13%;
     height: 100%;
   }
 
@@ -799,6 +868,10 @@
   }
 
   .mobile_version {
+    display: none;
+  }
+
+  .quick_acces {
     display: none;
   }
 
