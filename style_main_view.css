@@ -47,6 +47,7 @@
     margin-top: 12%;
     margin-left: 6%;
     cursor: pointer;
+    color: #3a4a42;
   }
 
   .wrap_quick_acces {
@@ -55,18 +56,6 @@
     background-color: lightsteelblue;
     margin: 0;
     padding: 0;
-  }
-
-  .portafolio_go,
-  .about_go,
-  .contact_go {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
-    font-family: "Inter", sans-serif !important;
-    color: #3a4a42;
-    margin: 10% 0 0 5%;
   }
 
   .menu_items,
