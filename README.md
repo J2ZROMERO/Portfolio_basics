@@ -1,5 +1,3 @@
-# Personal_Portafolio_Web_Site![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Portafolio
 
 > You could find more information about my experience, projects , achieves , career path and much more just take a look at this content.
@@ -31,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 ### ejecute in your terminal git clone "htt:github/portafolio";
 
 
-
+### [Live demo ]( https://j2zromero.github.io/)
 
 
 ## Authors
