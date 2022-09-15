@@ -127,3 +127,37 @@ function bottonEvent(event) {
 }
 
 //
+function popupMobil(botton) {
+  botton.addEventListener('click', () => {
+    const section = document.createElement('section');
+    section.className = 'container';
+
+    css(section, {
+      width: '375px',
+      height: '882px',
+      background: '#C1C7D0',
+
+      display: 'flex',
+      'justify-content': 'center',
+      'align-items': 'center',
+    });
+
+    const content = document.createElement('div');
+    content.className = 'content';
+
+    css(content, {
+      'box-sizing': 'border-box',
+      display: 'flex',
+      'flex-direction': 'column',
+      'align-items': 'flex-start',
+      padding: '16px',
+      gap: '12px',
+      width: '343px',
+      height: '836px',
+      top: '20px',
+      background: '#FFFFFF',
+      border: '1px solid #DFE1E6',
+      'border-radius': '16px',
+    }); 
+  })
+}
