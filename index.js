@@ -1104,3 +1104,61 @@ const seePD = document.querySelectorAll('.seeMM');
 for (let i = 0; i < 6; i += 1) {
   popupDesktop(seePD[i]);
 }
+
+/// //form validation
+
+
+const email = document.getElementById('mail');
+
+
+const characters = /^[a-z0-9-]+@[a-z0-9]+\.[a-z0-9.]+$/;
+
+document.querySelector('.form_button').addEventListener('click', (event) => {
+  
+  if (email.value == '') {
+    error.style.display = 'none';
+  }
+  if (characters.test(email.value)) {
+
+  } else {
+    const error = document.querySelector('.error');
+
+    error.style.display = 'block';
+
+    window.setTimeout(() => {
+      error.style.display = 'none';
+    }, 2000);
+
+    event.preventDefault();
+  }
+});
+
+
+const emailD = document.getElementById('mailD');
+
+
+const charactersD = /^[a-z0-9-]+@[a-z0-9]+\.[a-z0-9.]+$/;
+
+document.querySelector('.form_buttonD').addEventListener('click', (event) => {
+  
+
+  if (emailD.value == '') {
+    errorD.style.display = 'none';
+  }
+
+  if (emailD.value == '') {
+    errorD.style.display = 'none';
+  }
+  if (charactersD.test(emailD.value)) {
+
+  } else {
+    const errorD = document.querySelector('.errorD');
+    errorD.style.display = 'block';
+
+    window.setTimeout(() => {
+      errorD.style.display = 'none';
+    }, 2000);
+
+    event.preventDefault();
+  }
+});

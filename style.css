@@ -837,6 +837,16 @@
     margin: 0;
     list-style: none;
   }
+
+  .error{
+width: 100%;
+color: red;
+font-family: sans-serif;
+font-size: .8em;
+display: none;
+margin-top: 5px;
+  } 
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -1492,4 +1502,14 @@
   .span {
     color: #36b37e;
   }
+  
+  .errorD{
+    width: 100%;
+    color: red;
+    font-family: sans-serif;
+    font-size: .8em;
+    display: none;
+    margin-top: 5px;
+      } 
+    
 }
