@@ -1104,6 +1104,7 @@ const seePD = document.querySelectorAll('.seeMM');
 for (let i = 0; i < 6; i += 1) {
   popupDesktop(seePD[i]);
 }
+//
 
 /// //form validation
 
@@ -1129,7 +1130,6 @@ document.querySelector('.form_button').addEventListener('click', (event) => {
 });
 
 const emailD = document.getElementById('mailD');
-
 const charactersD = /^[a-z0-9-]+@[a-z0-9]+\.[a-z0-9.]+$/;
 
 document.querySelector('.form_buttonD').addEventListener('click', (event) => {
