@@ -140,354 +140,54 @@ function popupMobil(botton) {
       'align-items': 'center',
     });
 
-    const content = document.createElement('div');
-    content.className = 'content';
 
-    css(content, {
-      'box-sizing': 'border-box',
-      display: 'flex',
-      'flex-direction': 'column',
-      'align-items': 'flex-start',
-      padding: '16px',
-      gap: '12px',
-      width: '343px',
-      height: '836px',
-      top: '20px',
-      background: '#FFFFFF',
-      border: '1px solid #DFE1E6',
-      'border-radius': '16px',
-    });
+const mbversionelem = `
+<div class="content" style="box-sizing: border-box;display: flex;flex-direction: column;align-items: flex-start;padding: 16px;gap: 12px;width: 343px;height: 836px;top: 20px;background: rgb(255, 255, 255);border: 1px solid rgb(223, 225, 230);border-radius: 16px;justify-content: space-between;"><img class="closeMM" src="images/popup_mobile/Icon.svg" style="position: absolute; margin-left: 276px; margin-top: 21px; cursor: pointer;">
+<iframe class="image" src="images/recent_works/2022-10-15_09h54_27.mp4" style="height:50%"> </iframe>
+<h2 class="title" style="width: 259px;height: +;font-style: normal;font-weight: 600;font-size: 32px;line-height: 44px;color: rgb(23, 43, 77);margin: 0px;">To-do list</h2>
+<ul class="works_buttons" style="list-style: none; display: flex; flex-direction: row; align-items: center; padding: 0px; gap: 8px; margin: 0px; width: 246px; height: 32px;">
+<li class="tools"><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
+<span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">Ruby on rails</span>
+</button></li><li><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
+<span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">css</span></button>
+</li><li><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
+<span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">Javascript</span></button></li></ul>
+<p style="width: 311px;font-family: &quot;Inter UI&quot;, sans-serif;font-style: normal;font-weight: 400;font-size: 16px;line-height: 24px;color: rgb(52, 69, 99);margin: 0px;">Use this project as a tool for remembering your daily tasks, confirming, editing, remove are actions you can do to tasks, your data is saved in the LocalStorage so every time you open or refresh the page all changes will be present.</p>
+<ul class="buttons_action" style="width: 311px; height: 56px; list-style: none; display: flex; justify-content: space-between; padding: 0px;">
+<li><a href="https://j2zromero.github.io/Personal_Portafolio_Web_Site/" style="text-decoration: none;"><button class="live" style="display: flex; flex-direction: row; align-items: flex-start; padding: 12px 0px; gap: 12px; justify-content: center; width: 141px; height: 48px; border: 0px; background: rgb(54, 179, 127); border-radius: 4px;"><span class="see" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span>
+<img src="images/popup_mobile/IconExport.svg"></button></a></li><li><a href="https://github.com/J2ZROMERO/Personal_Portafolio_Web_Site" style="text-decoration: none;"><button class="source" style="display: flex; flex-direction: row; align-items: flex-start; padding: 12px 0px; gap: 12px; justify-content: center; width: 141px; height: 48px; border: 0px; background: rgb(54, 179, 127); border-radius: 4px;">
+<span class="see P" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See source</span><img src="images/popup_mobile/IconGitHub.svg"></button></a>
+</li></ul></div>
+`
+section.innerHTML = mbversionelem;
 
-    const x = document.createElement('img');
-    const attributesX = {
-      class: 'closeMM',
-      src: 'images/popup_mobile/Icon.svg',
-    };
 
-    setAttributes(x, attributesX);
 
-    css(x, {
-      position: 'absolute',
-      'margin-left': '276px',
-      'margin-top': '21px',
-      cursor: 'pointer',
-    });
 
-    const image = document.createElement('img');
-    const attributesImage = {
-      class: 'image',
-      src: 'images/popup_mobile/Snapshoot Portfolio.svg',
-    };
-    setAttributes(image, attributesImage);
 
-    /* let image_class = document. querySelector('.image');
-
-      css(image,{
-        position: 'fixed',
-        width: '311px',
-        height: '220px',
-        'border-radius': '8px'
-
-      }); */
-
-    const h2 = document.createElement('h2');
-
-    h2.className = 'title';
-    css(h2, {
-      width: '259px',
-      height: '135px',
-      'font-family': 'Inter UI, sans-serif',
-      'font-style': 'normal',
-      'font-weight': 600,
-      'font-size': '32px',
-      'line-height': '44px',
-      color: '#172B4D',
-      margin: 0,
-    });
-    h2.innerHTML = 'Keeping track of hundreds ofcomponents';
-
-    const ul = document.createElement('ul');
-    ul.className = 'works_buttons';
-
-    css(ul, {
-      'list-style': 'none',
-      display: 'flex',
-      'flex-direction': 'row',
-      'align-items': 'center',
-      padding: '0px',
-      gap: '8px',
-      margin: 0,
-      width: '246px',
-      height: '32px',
-    });
-    const tools1 = document.createElement('li');
-    tools1.className = 'tools';
-
-    const tools1B = document.createElement('button');
-    tools1B.className = 'wb_action';
-    css(tools1B, {
-      padding: '8px 12px',
-      height: '32px',
-      'font-style': 'normal',
-      'font-weight': 600,
-      'letter-spacing': '0.03em',
-      color: '#3A4A42',
-      'background-color': '#eef8f3',
-      border: 0,
-      'border-radius': '4px',
-      'font-family': 'Inter UI, sans-serif',
-
-    });
-    const tools1BS = document.createElement('span');
-    tools1BS.className = 'tol';
-
-    css(tools1BS, {
-      width: '79px',
-      height: '16px',
-      'font-family': 'Inter UI, sans-serif',
-      'font-style': 'normal',
-      'font-weight': 600,
-      'font-size': '11px',
-      'line-height': '16px',
-      'letter-spacing': '0.03em',
-      color: '#3A4A42',
-    });
-    tools1BS.innerHTML = 'Ruby on rails';
-    const tools2 = document.createElement('li');
-
-    const tools2B = document.createElement('button');
-    tools2B.className = 'wb_action';
-    css(tools2B, {
-      padding: '8px 12px',
-      height: '32px',
-      'font-style': 'normal',
-      'font-weight': 600,
-      'letter-spacing': '0.03em',
-      color: '#3A4A42',
-      'background-color': '#eef8f3',
-
-      border: 0,
-      'border-radius': '4px',
-      'font-family': 'Inter UI, sans-serif',
-
-    });
-    const tools2BS = document.createElement('span');
-    tools2BS.className = 'tol';
-
-    css(tools2BS, {
-      width: '79px',
-      height: '16px',
-      'font-family': 'Inter UI, sans-serif',
-      'font-style': 'normal',
-      'font-weight': 600,
-      'font-size': '11px',
-      'line-height': '16px',
-      'letter-spacing': '0.03em',
-      color: '#3A4A42',
-    });
-    tools2BS.innerHTML = 'css';
-    const tools3 = document.createElement('li');
-    const tools3B = document.createElement('button');
-    tools3B.className = 'wb_action';
-    css(tools3B, {
-      padding: '8px 12px',
-      height: '32px',
-      'font-style': 'normal',
-      'font-weight': 600,
-      'letter-spacing': '0.03em',
-      color: '#3A4A42',
-      'background-color': '#eef8f3',
-
-      border: 0,
-      'border-radius': '4px',
-      'font-family': 'Inter UI, sans-serif',
-
-    });
-    const tools3BS = document.createElement('span');
-    tools3BS.className = 'tol';
-
-    css(tools3BS, {
-      width: '79px',
-      height: '16px',
-      'font-family': 'Inter UI, sans-serif',
-      'font-style': 'normal',
-      'font-weight': 600,
-      'font-size': '11px',
-      'line-height': '16px',
-      'letter-spacing': '0.03em',
-      color: '#3A4A42',
-    });
-    tools3BS.innerHTML = 'Javascript';
-
-    const p = document.createElement('p');
-    css(p, {
-      width: '311px',
-      height: '313px',
-      'font-family': 'Inter UI, sans-serif',
-      'font-style': 'normal',
-      'font-weight': 400,
-      'font-size': '16px',
-      'line-height': '24px',
-      color: '#344563',
-      margin: 0,
-    });
-    p.innerHTML = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummtext ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the  printing and typesetting industry. Lorem Ipsum has been the industrys  standard dummy text ever since the 1500s, when an unknown printer took a   galley of type and scrambled it 1960s with the relea';
-
-    const ulAction = document.createElement('ul');
-    ulAction.className = 'buttons_action';
-    css(ulAction, {
-      width: '311px',
-      height: '56px',
-      'list-style': 'none',
-      display: 'flex',
-      'justify-content': 'space-between',
-      padding: '0px',
-    });
-
-    const seeL = document.createElement('li');
-    const seeLB = document.createElement('button');
-    seeLB.className = 'live';
-
-    css(seeLB, {
-      display: 'flex',
-      'flex-direction': 'row',
-      'align-items': 'flex-start',
-      padding: '12px 16px',
-      gap: '12px',
-      'justify-content': 'center',
-      'padding-left': 0,
-      'padding-right': 0,
-      width: '141px',
-      height: '48px',
-      border: 0,
-      background: '#36B37F',
-      'border-radius': '4px',
-    });
-    const linkSeeL = document.createElement('a');
-    linkSeeL.href = 'https://j2zromero.github.io/Personal_Portafolio_Web_Site/';
-    linkSeeL.style.textDecoration = 'none';
-
-    const seeLBS = document.createElement('span');
-    seeLBS.className = 'see';
-
-    css(seeLBS, {
-      width: '78px',
-      height: '24px',
-      'font-family': 'Inter UI, sans-serif',
-      'font-style': 'normal',
-      'font-weight': 500,
-      'font-size': '14px',
-      'line-height': '24px',
-      'text-align': 'center',
-      'letter-spacing': '0.03em',
-      color: '#FFFFFF',
-    });
-
-    seeLBS.innerHTML = 'See Live';
-    const seeLBSI = document.createElement('img');
-    seeLBSI.src = 'images/popup_mobile/IconExport.svg';
-
-    const seeG = document.createElement('li');
-    const seeGB = document.createElement('button');
-    seeGB.className = 'source';
-
-    css(seeGB, {
-      display: 'flex',
-      'flex-direction': 'row',
-      'align-items': 'flex-start',
-      padding: '12px 16px',
-      gap: '12px',
-      'justify-content': 'center',
-      'padding-left': 0,
-      'padding-right': 0,
-      width: '141px',
-      height: '48px',
-      border: 0,
-      background: '#36B37F',
-      'border-radius': '4px',
-    });
-    const linkSeeG = document.createElement('a');
-    linkSeeG.href = 'https://github.com/J2ZROMERO/Personal_Portafolio_Web_Site';
-    linkSeeG.style.textDecoration = 'none';
-
-    const seeGBS = document.createElement('span');
-    seeGBS.className = 'see P';
-
-    css(seeGBS, {
-      width: '78px',
-      height: '24px',
-      'font-family': 'Inter UI, sans-serif',
-      'font-style': 'normal',
-      'font-weight': 500,
-      'font-size': '14px',
-      'line-height': '24px',
-      'text-align': 'center',
-      'letter-spacing': '0.03em',
-      color: '#FFFFFF',
-    });
-
-    seeGBS.innerHTML = 'See source';
-    const seeGBSI = document.createElement('img');
-    seeGBSI.src = 'images/popup_mobile/IconGitHub.svg';
-
-    section.appendChild(content);
-    content.appendChild(x);
-    content.appendChild(image);
-    content.appendChild(h2);
-
-    ul.appendChild(tools1);
-    tools1.appendChild(tools1B);
-    tools1B.appendChild(tools1BS);
-
-    ul.appendChild(tools2);
-    tools2.appendChild(tools2B);
-    tools2B.appendChild(tools2BS);
-
-    ul.appendChild(tools3);
-    tools3.appendChild(tools3B);
-    tools3B.appendChild(tools3BS);
-
-    content.appendChild(ul);
-    content.appendChild(p);
-
-    ulAction.appendChild(seeL);
-    seeL.appendChild(linkSeeL);
-    linkSeeL.appendChild(seeLB);
-    seeLB.appendChild(seeLBS);
-    seeLB.appendChild(seeLBSI);
-
-    ulAction.appendChild(seeG);
-    seeG.appendChild(linkSeeG);
-    linkSeeG.appendChild(seeGB);
-    seeGB.appendChild(seeGBS);
-    seeGB.appendChild(seeGBSI);
-
-    content.appendChild(ulAction);
-
-    const mobileVersion = document.querySelector('.mobile_version');
-    const head = document.querySelector('.header_mobile');
-    const body = document.querySelector('body');
-    head.style.visibility = 'hidden';
-    body.insertBefore(section, head);
-
-    const mobileVE = [];
+const head = document.querySelector('.header_mobile')
+head.style.display = 'none'
+const mobileVersion = document.querySelector('.mobile_version')
+const mobileVE = [];
 
     while (mobileVersion.hasChildNodes()) {
       mobileVE.push(mobileVersion.firstChild);
       mobileVersion.removeChild(mobileVersion.firstChild);
     }
-    body.removeChild(mobileVersion);
-
+    document.body.removeChild(mobileVersion);
+    document.body.appendChild(section)
+    
     window.scroll({
       top: 0,
       behavior: 'auto',
     });
 
-    x.addEventListener('click', () => {
-      section.style.display = 'none';
+    document.querySelector('.closeMM').addEventListener('click', () => {
+      document.body.removeChild(section)
+
       head.style.visibility = 'visible';
 
-      body.appendChild(mobileVersion);
+     document.body.appendChild(mobileVersion);
       for (let i = 0; i <= mobileVE.length - 1; i += 1) {
         mobileVersion.appendChild(mobileVE[i]);
       }
@@ -498,62 +198,62 @@ function popupMobil(botton) {
       });
     });
 
-    seeGB.addEventListener('mouseover', () => {
-      seeGB.style.backgroundColor = 'green';
+    // seeGB.addEventListener('mouseover', () => {
+    //   seeGB.style.backgroundColor = 'green';
 
-      seeGB.style.cursor = 'pointer';
-    });
+    //   seeGB.style.cursor = 'pointer';
+    // });
 
-    seeGB.addEventListener('mouseout', () => {
-      seeGB.style.backgroundColor = '#36B37F';
+    // seeGB.addEventListener('mouseout', () => {
+    //   seeGB.style.backgroundColor = '#36B37F';
 
-      seeLB.style.cursor = 'pointer';
-    });
-    seeLB.addEventListener('mouseover', () => {
-      seeLB.style.backgroundColor = 'green';
+    //   seeLB.style.cursor = 'pointer';
+    // });
+    // seeLB.addEventListener('mouseover', () => {
+    //   seeLB.style.backgroundColor = 'green';
 
-      seeLB.style.cursor = 'pointer';
-    });
+    //   seeLB.style.cursor = 'pointer';
+    // });
 
-    seeLB.addEventListener('mouseout', () => {
-      seeLB.style.backgroundColor = '#36B37F';
+    // seeLB.addEventListener('mouseout', () => {
+    //   seeLB.style.backgroundColor = '#36B37F';
 
-      seeLB.style.cursor = 'pointer';
-    });
+    //   seeLB.style.cursor = 'pointer';
+    // });
 
-    tools1B.addEventListener('mouseover', () => {
-      tools1B.style.backgroundColor = '#ebeff4';
+    // tools1B.addEventListener('mouseover', () => {
+    //   tools1B.style.backgroundColor = '#ebeff4';
 
-      tools1B.style.cursor = 'pointer';
-    });
+    //   tools1B.style.cursor = 'pointer';
+    // });
 
-    tools1B.addEventListener('mouseout', () => {
-      tools1B.style.backgroundColor = 'rgb(238, 248, 243)';
+    // tools1B.addEventListener('mouseout', () => {
+    //   tools1B.style.backgroundColor = 'rgb(238, 248, 243)';
 
-      tools1B.style.cursor = 'pointer';
-    });
-    tools2B.addEventListener('mouseover', () => {
-      tools2B.style.backgroundColor = '#ebeff4';
+    //   tools1B.style.cursor = 'pointer';
+    // });
+    // tools2B.addEventListener('mouseover', () => {
+    //   tools2B.style.backgroundColor = '#ebeff4';
 
-      tools2B.style.cursor = 'pointer';
-    });
+    //   tools2B.style.cursor = 'pointer';
+    // });
 
-    tools2B.addEventListener('mouseout', () => {
-      tools2B.style.backgroundColor = 'rgb(238, 248, 243)';
+    // tools2B.addEventListener('mouseout', () => {
+    //   tools2B.style.backgroundColor = 'rgb(238, 248, 243)';
 
-      tools2B.style.cursor = 'pointer';
-    });
-    tools3B.addEventListener('mouseover', () => {
-      tools3B.style.backgroundColor = '#ebeff4';
+    //   tools2B.style.cursor = 'pointer';
+    // });
+    // tools3B.addEventListener('mouseover', () => {
+    //   tools3B.style.backgroundColor = '#ebeff4';
 
-      tools3B.style.cursor = 'pointer';
-    });
+    //   tools3B.style.cursor = 'pointer';
+    // });
 
-    tools3B.addEventListener('mouseout', () => {
-      tools3B.style.backgroundColor = 'rgb(238, 248, 243)';
+    // tools3B.addEventListener('mouseout', () => {
+    //   tools3B.style.backgroundColor = 'rgb(238, 248, 243)';
 
-      tools3B.style.cursor = 'pointer';
-    });
+    //   tools3B.style.cursor = 'pointer';
+    // });
   });
 }
 
@@ -591,23 +291,18 @@ function popupDesktop(botton) {
       'align-items': 'baseline',
       'justify-content': 'space-between',
     });
+const todolist = `
+<img class="closeMM" src="images/popup_desktop/IconCancel.svg" style="margin-left: 97%; margin-top: 1%; cursor: pointer;">
+<iframe class="image" src="images/recent_works/2022-10-15_09h54_27.mp4" style="width: 100%; border-radius: 8px; height: 60%;"></iframe>
+<h2 class="title" style="width: 359px; height: 68px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 24px; line-height: 32px; color: rgb(23, 43, 77); margin: 0px; text-align: start;">To-do list</h2>
+<ul class="buttons_action" style="width: 213px; height: 49px; list-style: none; display: flex; justify-content: space-between; padding: 0px;"><li><a href="https://j2zromero.github.io/Personal_Portafolio_Web_Site/" style="text-decoration: none;"><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li><li><a href="https://github.com/J2ZROMERO/Personal_Portafolio_Web_Site" style="text-decoration: none;"><button class="source" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end;"><span class="see P" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See source</span><img src="images/popup_desktop/IconGitHub.svg"></button></a></li></ul>
+<ul class="works_buttons" style="list-style: none; display: flex; flex-direction: row; align-items: center; padding: 0px; gap: 8px; margin: 0px; width: 100%; height: 32px; justify-content: flex-start;"><li class="tools"><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px; cursor: pointer;"><span class="tol" style="height: 15px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">JavaScript</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px; cursor: pointer;"><span class="tol" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">HTML</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px; cursor: pointer;"><span class="tol" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">Css</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px;"><span class="Git" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">Git</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px;"><span class="tol" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">Github</span></button></li></ul>
+<p style="width: 100%; height: 183px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 400; font-size: 16px; line-height: 24px; color: rgb(52, 69, 99); margin: 2% 0px 0px; text-align: start;">Use this project as a tool for remembering your daily tasks, confirming, editing, remove are actions you can do to tasks, your data is saved in the LocalStorage so every time you open or refresh the page all changes will be present.</p>
 
-    const x = document.createElement('img');
-    const attributesX = {
-      class: 'closeMM',
-      src: 'images/popup_desktop/IconCancel.svg',
-    };
+`
 
-    setAttributes(x, attributesX);
-
-    css(x, {
-      position: 'block',
-      'margin-left': '97%',
-      'margin-top': '1%',
-      cursor: 'pointer',
-    });
-
-    content.appendChild(p);
+    content.innerHTML = todolist;
+    section.appendChild(content)
 
     const desktopVersion = document.querySelector('.desktop_version');
     const head = document.querySelector('.backgrund_main');
@@ -628,9 +323,9 @@ function popupDesktop(botton) {
       behavior: 'auto',
     });
 
-    x.addEventListener('click', () => {
-      section.style.display = 'none';
-      // head.style.visibility = 'visible';
+    document.querySelector('.closeMM').addEventListener('click', () => {
+      
+      document.body.removeChild(section)
 
       body.appendChild(desktopVersion);
       for (let i = 0; i <= desktopVE.length - 1; i += 1) {
@@ -643,24 +338,7 @@ function popupDesktop(botton) {
       });
     });
 
-    bottonEventA(seeLB);
-    bottonEventA(seeGB);
-    bottonEventOutA(seeLB);
-    bottonEventOutA(seeGB);
 
-    bottonEvent(tools1B);
-    bottonEvent(tools2B);
-    bottonEvent(tools3B);
-    bottonEvent(tools4B);
-    bottonEvent(tools5B);
-    bottonEvent(tools6B);
-
-    bottonEventOut(tools1B);
-    bottonEventOut(tools2B);
-    bottonEventOut(tools3B);
-    bottonEventOut(tools4B);
-    bottonEventOut(tools5B);
-    bottonEventOut(tools6B);
   });
 }
 // end desktop menu
