@@ -1015,6 +1015,8 @@
     border: 1px solid #d0d9d4;
     border-radius: 8px;
     margin: 1% 10px;
+    flex-wrap: wrap;
+    align-items: flex-end;
   }
 
   .title_header {
@@ -1041,7 +1043,7 @@
   .works_button_action {
     background-color: white;
     width: 369px;
-    height: 252px;
+    height: 200px;
     border-radius: 8px;
     gap: 16px;
     padding: 15px;
@@ -1061,9 +1063,9 @@
     line-height: 32px;
     display: flex;
     align-items: center;
-    text-align: center;
     color: #172b4d;
     margin: 0;
+    justify-content: center;
   }
 
   .works_buttons {
@@ -1511,4 +1513,8 @@
     margin-top: 0;
     margin-bottom: 8px;
   }
+.todolist{
+  width: 100%;
+}
+
 }
