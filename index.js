@@ -80,11 +80,11 @@ document.querySelector('.about_go').addEventListener('click', () => {
 
 // functions styles and properties
 
-function setAttributes(element, attributes) {
-  Object.keys(attributes).forEach((attr) => {
-    element.setAttribute(attr, attributes[attr]);
-  });
-}
+// function setAttributes(element, attributes) {
+//   Object.keys(attributes).forEach((attr) => {
+//     element.setAttribute(attr, attributes[attr]);
+//   });
+// }
 
 function css(variable, style) {
   Object.keys(style).forEach((attr) => {
@@ -93,177 +93,200 @@ function css(variable, style) {
 }
 
 // buttons hover and mouseout
-function bottonEventOutA(event) {
-  event.addEventListener('mouseout', () => {
-    event.style.backgroundColor = '#36B37F';
+// function bottonEventOutA(event) {
+//   event.addEventListener('mouseout', () => {
+//     event.style.backgroundColor = '#36B37F';
 
-    event.style.cursor = 'pointer';
-  });
-}
+//     event.style.cursor = 'pointer';
+//   });
+// }
 
-function bottonEventA(event) {
-  event.addEventListener('mouseover', () => {
-    event.style.backgroundColor = 'green';
+// function bottonEventA(event) {
+//   event.addEventListener('mouseover', () => {
+//     event.style.backgroundColor = 'green';
 
-    event.style.cursor = 'pointer';
-  });
-}
+//     event.style.cursor = 'pointer';
+//   });
+// }
 
-function bottonEventOut(event) {
-  event.addEventListener('mouseout', () => {
-    event.style.backgroundColor = 'rgb(238, 248, 243)';
+// function bottonEventOut(event) {
+//   event.addEventListener('mouseout', () => {
+//     event.style.backgroundColor = 'rgb(238, 248, 243)';
 
-    event.style.cursor = 'pointer';
-  });
-}
-function bottonEvent(event) {
-  event.addEventListener('mouseover', () => {
-    event.style.backgroundColor = '#ebeff4';
+//     event.style.cursor = 'pointer';
+//   });
+// }
+// function bottonEvent(event) {
+//   event.addEventListener('mouseover', () => {
+//     event.style.backgroundColor = '#ebeff4';
 
-    event.style.cursor = 'pointer';
-  });
-}
+//     event.style.cursor = 'pointer';
+//   });
+// }
 
 //
-function popupMobil(botton) {
+function popupMobil(botton,work) {
+
+  switch (work){
+case "todolist":
   botton.addEventListener('click', () => {
     const section = document.createElement('section');
     section.className = 'container';
-
+  
     css(section, {
       width: '375px',
       height: '882px',
       background: '#C1C7D0',
-
+  
       display: 'flex',
       'justify-content': 'center',
       'align-items': 'center',
     });
-
-
-const mbversionelem = `
-<div class="content" style="box-sizing: border-box;display: flex;flex-direction: column;align-items: flex-start;padding: 16px;gap: 12px;width: 343px;height: 836px;top: 20px;background: rgb(255, 255, 255);border: 1px solid rgb(223, 225, 230);border-radius: 16px;justify-content: space-between;"><img class="closeMM" src="images/popup_mobile/Icon.svg" style="position: absolute; margin-left: 276px; margin-top: 21px; cursor: pointer;">
-<iframe class="image" src="images/recent_works/2022-10-15_09h54_27.mp4" style="height:50%"> </iframe>
-<h2 class="title" style="width: 259px;height: +;font-style: normal;font-weight: 600;font-size: 32px;line-height: 44px;color: rgb(23, 43, 77);margin: 0px;">To-do list</h2>
-<ul class="works_buttons" style="list-style: none; display: flex; flex-direction: row; align-items: center; padding: 0px; gap: 8px; margin: 0px; width: 246px; height: 32px;">
-<li class="tools"><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
-<span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">Ruby on rails</span>
-</button></li><li><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
-<span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">css</span></button>
-</li><li><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
-<span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">Javascript</span></button></li></ul>
-<p style="width: 311px;font-family: &quot;Inter UI&quot;, sans-serif;font-style: normal;font-weight: 400;font-size: 16px;line-height: 24px;color: rgb(52, 69, 99);margin: 0px;">Use this project as a tool for remembering your daily tasks, confirming, editing, remove are actions you can do to tasks, your data is saved in the LocalStorage so every time you open or refresh the page all changes will be present.</p>
-<ul class="buttons_action" style="width: 311px; height: 56px; list-style: none; display: flex; justify-content: space-between; padding: 0px;">
-<li><a href="https://j2zromero.github.io/Personal_Portafolio_Web_Site/" style="text-decoration: none;"><button class="live" style="display: flex; flex-direction: row; align-items: flex-start; padding: 12px 0px; gap: 12px; justify-content: center; width: 141px; height: 48px; border: 0px; background: rgb(54, 179, 127); border-radius: 4px;"><span class="see" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span>
-<img src="images/popup_mobile/IconExport.svg"></button></a></li><li><a href="https://github.com/J2ZROMERO/Personal_Portafolio_Web_Site" style="text-decoration: none;"><button class="source" style="display: flex; flex-direction: row; align-items: flex-start; padding: 12px 0px; gap: 12px; justify-content: center; width: 141px; height: 48px; border: 0px; background: rgb(54, 179, 127); border-radius: 4px;">
-<span class="see P" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See source</span><img src="images/popup_mobile/IconGitHub.svg"></button></a>
-</li></ul></div>
-`
-section.innerHTML = mbversionelem;
-
-
-
-
-
-const head = document.querySelector('.header_mobile')
-head.style.display = 'none'
-const mobileVersion = document.querySelector('.mobile_version')
-const mobileVE = [];
-
+  
+    const mbversionelem = `
+  <div class="content" style="box-sizing: border-box;display: flex;flex-direction: column;align-items: flex-start;padding: 16px;gap: 12px;width: 343px;height: 836px;top: 20px;background: rgb(255, 255, 255);border: 1px solid rgb(223, 225, 230);border-radius: 16px;justify-content: space-between;"><img class="closeMM" src="images/popup_mobile/Icon.svg" style="position: absolute; margin-left: 276px; margin-top: 21px; cursor: pointer;">
+  <iframe class="image" src="images/recent_works/todolist.mp4" style="height:50%"> </iframe>
+  <h2 class="title" style="width: 259px;height: +;font-style: normal;font-weight: 600;font-size: 32px;line-height: 44px;color: rgb(23, 43, 77);margin: 0px;">To-do list</h2>
+  <ul class="works_buttons" style="list-style: none; display: flex; flex-direction: row; align-items: center; padding: 0px; gap: 8px; margin: 0px; width: 246px; height: 32px;">
+  <li class="tools"><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
+  <span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">Ruby on rails</span>
+  </button></li><li><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
+  <span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">css</span></button>
+  </li><li><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
+  <span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">Javascript</span></button></li></ul>
+  <p style="width: 311px;font-family: &quot;Inter UI&quot;, sans-serif;font-style: normal;font-weight: 400;font-size: 16px;line-height: 24px;color: rgb(52, 69, 99);margin: 0px;">Use this project as a tool for remembering your daily tasks, confirming, editing, remove are actions you can do to tasks, your data is saved in the LocalStorage so every time you open or refresh the page all changes will be present.</p>
+  <ul class="buttons_action" style="width: 311px; height: 56px; list-style: none; display: flex; justify-content: space-between; padding: 0px;">
+  <li><a href="https://j2zromero.github.io/Personal_Portafolio_Web_Site/" style="text-decoration: none;"><button class="live" style="display: flex; flex-direction: row; align-items: flex-start; padding: 12px 0px; gap: 12px; justify-content: center; width: 141px; height: 48px; border: 0px; background: rgb(54, 179, 127); border-radius: 4px;"><span class="see" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span>
+  <img src="images/popup_mobile/IconExport.svg"></button></a></li><li><a href="https://github.com/J2ZROMERO/Personal_Portafolio_Web_Site" style="text-decoration: none;"><button class="source" style="display: flex; flex-direction: row; align-items: flex-start; padding: 12px 0px; gap: 12px; justify-content: center; width: 141px; height: 48px; border: 0px; background: rgb(54, 179, 127); border-radius: 4px;">
+  <span class="see P" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See source</span><img src="images/popup_mobile/IconGitHub.svg"></button></a>
+  </li></ul></div>
+  `;
+    section.innerHTML = mbversionelem;
+  
+    const head = document.querySelector('.header_mobile');
+    head.style.display = 'none';
+    const mobileVersion = document.querySelector('.mobile_version');
+    const mobileVE = [];
+  
     while (mobileVersion.hasChildNodes()) {
       mobileVE.push(mobileVersion.firstChild);
       mobileVersion.removeChild(mobileVersion.firstChild);
     }
     document.body.removeChild(mobileVersion);
-    document.body.appendChild(section)
-    
+    document.body.appendChild(section);
+  
     window.scroll({
       top: 0,
       behavior: 'auto',
     });
-
+  
     document.querySelector('.closeMM').addEventListener('click', () => {
-      document.body.removeChild(section)
-
+      document.body.removeChild(section);
+  
       head.style.visibility = 'visible';
-
-     document.body.appendChild(mobileVersion);
+  
+      document.body.appendChild(mobileVersion);
       for (let i = 0; i <= mobileVE.length - 1; i += 1) {
         mobileVersion.appendChild(mobileVE[i]);
       }
-
+  
       window.scroll({
         top: 700,
         behavior: 'auto',
       });
     });
-
-    // seeGB.addEventListener('mouseover', () => {
-    //   seeGB.style.backgroundColor = 'green';
-
-    //   seeGB.style.cursor = 'pointer';
-    // });
-
-    // seeGB.addEventListener('mouseout', () => {
-    //   seeGB.style.backgroundColor = '#36B37F';
-
-    //   seeLB.style.cursor = 'pointer';
-    // });
-    // seeLB.addEventListener('mouseover', () => {
-    //   seeLB.style.backgroundColor = 'green';
-
-    //   seeLB.style.cursor = 'pointer';
-    // });
-
-    // seeLB.addEventListener('mouseout', () => {
-    //   seeLB.style.backgroundColor = '#36B37F';
-
-    //   seeLB.style.cursor = 'pointer';
-    // });
-
-    // tools1B.addEventListener('mouseover', () => {
-    //   tools1B.style.backgroundColor = '#ebeff4';
-
-    //   tools1B.style.cursor = 'pointer';
-    // });
-
-    // tools1B.addEventListener('mouseout', () => {
-    //   tools1B.style.backgroundColor = 'rgb(238, 248, 243)';
-
-    //   tools1B.style.cursor = 'pointer';
-    // });
-    // tools2B.addEventListener('mouseover', () => {
-    //   tools2B.style.backgroundColor = '#ebeff4';
-
-    //   tools2B.style.cursor = 'pointer';
-    // });
-
-    // tools2B.addEventListener('mouseout', () => {
-    //   tools2B.style.backgroundColor = 'rgb(238, 248, 243)';
-
-    //   tools2B.style.cursor = 'pointer';
-    // });
-    // tools3B.addEventListener('mouseover', () => {
-    //   tools3B.style.backgroundColor = '#ebeff4';
-
-    //   tools3B.style.cursor = 'pointer';
-    // });
-
-    // tools3B.addEventListener('mouseout', () => {
-    //   tools3B.style.backgroundColor = 'rgb(238, 248, 243)';
-
-    //   tools3B.style.cursor = 'pointer';
-    // });
   });
+  
+break
+;
+
+
+
+case "responsivewp":
+  botton.addEventListener('click', () => {
+    const section = document.createElement('section');
+    section.className = 'container';
+  
+    css(section, {
+      width: '375px',
+      height: '882px',
+      background: '#C1C7D0',
+  
+      display: 'flex',
+      'justify-content': 'center',
+      'align-items': 'center',
+    });
+  
+    const mbversionelem = `
+  <div class="content" style="box-sizing: border-box;display: flex;flex-direction: column;align-items: flex-start;padding: 16px;gap: 12px;width: 343px;height: 836px;top: 20px;background: rgb(255, 255, 255);border: 1px solid rgb(223, 225, 230);border-radius: 16px;justify-content: space-between;"><img class="closeMM" src="images/popup_mobile/Icon.svg" style="position: absolute; margin-left: 276px; margin-top: 21px; cursor: pointer;">
+  <iframe class="image" src="images/recent_works/course.mp4" style="height:50%"> </iframe>
+  <h2 class="title" style="width: 259px;height: +;font-style: normal;font-weight: 600;font-size: 32px;line-height: 44px;color: rgb(23, 43, 77);margin: 0px;">To-do list</h2>
+  <ul class="works_buttons" style="list-style: none; display: flex; flex-direction: row; align-items: center; padding: 0px; gap: 8px; margin: 0px; width: 246px; height: 32px;">
+  <li class="tools"><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
+  <span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">Ruby on rails</span>
+  </button></li><li><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
+  <span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">css</span></button>
+  </li><li><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
+  <span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">Javascript</span></button></li></ul>
+  <p style="width: 311px;font-family: &quot;Inter UI&quot;, sans-serif;font-style: normal;font-weight: 400;font-size: 16px;line-height: 24px;color: rgb(52, 69, 99);margin: 0px;">Use a responsive web page, to add several sections to your web page and show activities like, courses, events, concerts, etc.</p>
+  <ul class="buttons_action" style="width: 311px; height: 56px; list-style: none; display: flex; justify-content: space-between; padding: 0px;">
+  <li><a href="https://j2zromero.github.io/Personal_Portafolio_Web_Site/" style="text-decoration: none;"><button class="live" style="display: flex; flex-direction: row; align-items: flex-start; padding: 12px 0px; gap: 12px; justify-content: center; width: 141px; height: 48px; border: 0px; background: rgb(54, 179, 127); border-radius: 4px;"><span class="see" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span>
+  <img src="images/popup_mobile/IconExport.svg"></button></a></li><li><a href="https://github.com/J2ZROMERO/Personal_Portafolio_Web_Site" style="text-decoration: none;"><button class="source" style="display: flex; flex-direction: row; align-items: flex-start; padding: 12px 0px; gap: 12px; justify-content: center; width: 141px; height: 48px; border: 0px; background: rgb(54, 179, 127); border-radius: 4px;">
+  <span class="see P" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See source</span><img src="images/popup_mobile/IconGitHub.svg"></button></a>
+  </li></ul></div>
+  `;
+    section.innerHTML = mbversionelem;
+  
+    const head = document.querySelector('.header_mobile');
+    head.style.display = 'none';
+    const mobileVersion = document.querySelector('.mobile_version');
+    const mobileVE = [];
+  
+    while (mobileVersion.hasChildNodes()) {
+      mobileVE.push(mobileVersion.firstChild);
+      mobileVersion.removeChild(mobileVersion.firstChild);
+    }
+    document.body.removeChild(mobileVersion);
+    document.body.appendChild(section);
+  
+    window.scroll({
+      top: 0,
+      behavior: 'auto',
+    });
+  
+    
+    document.querySelector('.closeMM').addEventListener('click', () => {
+      document.body.removeChild(section);
+  
+      head.style.visibility = 'visible';
+  
+      document.body.appendChild(mobileVersion);
+      for (let i = 0; i <= mobileVE.length - 1; i += 1) {
+        mobileVersion.appendChild(mobileVE[i]);
+      }
+  
+      window.scroll({
+        top: 700,
+        behavior: 'auto',
+      });
+    });
+  });
+break  
+;
+
+  }
 }
 
 // desktop
 
-function popupDesktop(botton) {
+function popupDesktop(botton,work) {
+  switch(work){
+case "todolist":
+
   botton.addEventListener('click', () => {
     const section = document.createElement('section');
     section.className = 'container';
-
+  
     css(section, {
       width: '100vw',
       height: '100vh',
@@ -272,10 +295,10 @@ function popupDesktop(botton) {
       'justify-content': 'center',
       'align-items': 'center',
     });
-
+  
     const content = document.createElement('div');
     content.className = 'content';
-
+  
     css(content, {
       'box-sizing': 'border-box',
       display: 'flex',
@@ -291,72 +314,161 @@ function popupDesktop(botton) {
       'align-items': 'baseline',
       'justify-content': 'space-between',
     });
-const todolist = `
-<img class="closeMM" src="images/popup_desktop/IconCancel.svg" style="margin-left: 97%; margin-top: 1%; cursor: pointer;">
-<iframe class="image" src="images/recent_works/2022-10-15_09h54_27.mp4" style="width: 100%; border-radius: 8px; height: 60%;"></iframe>
-<h2 class="title" style="width: 359px; height: 68px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 24px; line-height: 32px; color: rgb(23, 43, 77); margin: 0px; text-align: start;">To-do list</h2>
-<ul class="buttons_action" style="width: 213px; height: 49px; list-style: none; display: flex; justify-content: space-between; padding: 0px;"><li><a href="https://j2zromero.github.io/Personal_Portafolio_Web_Site/" style="text-decoration: none;"><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li><li><a href="https://github.com/J2ZROMERO/Personal_Portafolio_Web_Site" style="text-decoration: none;"><button class="source" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end;"><span class="see P" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See source</span><img src="images/popup_desktop/IconGitHub.svg"></button></a></li></ul>
-<ul class="works_buttons" style="list-style: none; display: flex; flex-direction: row; align-items: center; padding: 0px; gap: 8px; margin: 0px; width: 100%; height: 32px; justify-content: flex-start;"><li class="tools"><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px; cursor: pointer;"><span class="tol" style="height: 15px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">JavaScript</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px; cursor: pointer;"><span class="tol" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">HTML</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px; cursor: pointer;"><span class="tol" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">Css</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px;"><span class="Git" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">Git</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px;"><span class="tol" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">Github</span></button></li></ul>
-<p style="width: 100%; height: 183px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 400; font-size: 16px; line-height: 24px; color: rgb(52, 69, 99); margin: 2% 0px 0px; text-align: start;">Use this project as a tool for remembering your daily tasks, confirming, editing, remove are actions you can do to tasks, your data is saved in the LocalStorage so every time you open or refresh the page all changes will be present.</p>
-
-`
-
+    const todolist = `
+  <img class="closeMM" src="images/popup_desktop/IconCancel.svg" style="margin-left: 97%; margin-top: 1%; cursor: pointer;">
+  <iframe class="image" src="images/recent_works/todolist.mp4" style="width: 100%; border-radius: 8px; height: 60%;"></iframe>
+  <h2 class="title" style="width: 359px; height: 68px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 24px; line-height: 32px; color: rgb(23, 43, 77); margin: 0px; text-align: start;">To-do list</h2>
+  <ul class="buttons_action" style="width: 213px; height: 49px; list-style: none; display: flex; justify-content: space-between; padding: 0px;"><li><a href="https://j2zromero.github.io/Personal_Portafolio_Web_Site/" style="text-decoration: none;"><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li><li><a href="https://github.com/J2ZROMERO/Personal_Portafolio_Web_Site" style="text-decoration: none;"><button class="source" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end;"><span class="see P" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See source</span><img src="images/popup_desktop/IconGitHub.svg"></button></a></li></ul>
+  <ul class="works_buttons" style="list-style: none; display: flex; flex-direction: row; align-items: center; padding: 0px; gap: 8px; margin: 0px; width: 100%; height: 32px; justify-content: flex-start;"><li class="tools"><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px; cursor: pointer;"><span class="tol" style="height: 15px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">JavaScript</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px; cursor: pointer;"><span class="tol" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">HTML</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px; cursor: pointer;"><span class="tol" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">Css</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px;"><span class="Git" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">Git</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px;"><span class="tol" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">Github</span></button></li></ul>
+  <p style="width: 100%; height: 183px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 400; font-size: 16px; line-height: 24px; color: rgb(52, 69, 99); margin: 2% 0px 0px; text-align: start;">Use this project as a tool for remembering your daily tasks, confirming, editing, remove are actions you can do to tasks, your data is saved in the LocalStorage so every time you open or refresh the page all changes will be present.</p>
+  
+  `;
+  
     content.innerHTML = todolist;
-    section.appendChild(content)
-
+    section.appendChild(content);
+  
     const desktopVersion = document.querySelector('.desktop_version');
     const head = document.querySelector('.backgrund_main');
     const body = document.querySelector('body');
     // head.style.visibility = 'hidden';
     body.insertBefore(section, head);
-
+  
     const desktopVE = [];
-
+  
     while (desktopVersion.hasChildNodes()) {
       desktopVE.push(desktopVersion.firstChild);
       desktopVersion.removeChild(desktopVersion.firstChild);
     }
     body.removeChild(desktopVersion);
-
+  
     window.scroll({
       top: 0,
       behavior: 'auto',
     });
-
+  
     document.querySelector('.closeMM').addEventListener('click', () => {
-      
-      document.body.removeChild(section)
-
+      document.body.removeChild(section);
+  
       body.appendChild(desktopVersion);
       for (let i = 0; i <= desktopVE.length - 1; i += 1) {
         desktopVersion.appendChild(desktopVE[i]);
       }
-
+  
       window.scroll({
         top: 1100,
         behavior: 'auto',
       });
     });
-
-
   });
+
+break
+;
+
+case "course":
+
+  botton.addEventListener('click', () => {
+    const section = document.createElement('section');
+    section.className = 'container';
+  
+    css(section, {
+      width: '100vw',
+      height: '100vh',
+      background: '#C1C7D0',
+      display: 'flex',
+      'justify-content': 'center',
+      'align-items': 'center',
+    });
+  
+    const content = document.createElement('div');
+    content.className = 'content';
+  
+    css(content, {
+      'box-sizing': 'border-box',
+      display: 'flex',
+      'flex-wrap': 'wrap',
+      padding: '16px',
+      gap: '9px',
+      width: '67vh',
+      height: '87vh',
+      top: '20px',
+      background: ' #FFFFFF',
+      border: '1px solid #DFE1E6',
+      'border-radius': '16px',
+      'align-items': 'baseline',
+      'justify-content': 'space-between',
+    });
+    const todolist = `
+  <img class="closeMM" src="images/popup_desktop/IconCancel.svg" style="margin-left: 97%; margin-top: 1%; cursor: pointer;">
+  <iframe class="image" src="images/recent_works/course.mp4" style="width: 100%; border-radius: 8px; height: 60%;"></iframe>
+  <h2 class="title" style="width: 359px; height: 68px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 24px; line-height: 32px; color: rgb(23, 43, 77); margin: 0px; text-align: start;">Development course web page</h2>
+  <ul class="buttons_action" style="width: 213px; height: 49px; list-style: none; display: flex; justify-content: space-between; padding: 0px;"><li><a href="https://j2zromero.github.io/Personal_Portafolio_Web_Site/" style="text-decoration: none;"><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li><li><a href="https://github.com/J2ZROMERO/Personal_Portafolio_Web_Site" style="text-decoration: none;"><button class="source" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end;"><span class="see P" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See source</span><img src="images/popup_desktop/IconGitHub.svg"></button></a></li></ul>
+  <ul class="works_buttons" style="list-style: none; display: flex; flex-direction: row; align-items: center; padding: 0px; gap: 8px; margin: 0px; width: 100%; height: 32px; justify-content: flex-start;"><li class="tools"><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px; cursor: pointer;"><span class="tol" style="height: 15px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">JavaScript</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px; cursor: pointer;"><span class="tol" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">HTML</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px; cursor: pointer;"><span class="tol" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">Css</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px;"><span class="Git" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">Git</span></button></li><li><button class="wb_action" style="height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif; padding: 6px;"><span class="tol" style="height: 19px; font-family: &quot;Inter UI&quot;, sans-serif; font-size: 0.62em; line-height: 16px; letter-spacing: 0.03em; color: rgb(52, 69, 99); font-weight: bolder;">Github</span></button></li></ul>
+  <p style="width: 100%; height: 183px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 400; font-size: 16px; line-height: 24px; color: rgb(52, 69, 99); margin: 2% 0px 0px; text-align: start;">Use a responsive web page, to add several sections to your web page and show activities like, courses, events, concerts, etc.</p>
+  
+  `;
+  
+    content.innerHTML = todolist;
+    section.appendChild(content);
+  
+    const desktopVersion = document.querySelector('.desktop_version');
+    const head = document.querySelector('.backgrund_main');
+    const body = document.querySelector('body');
+    // head.style.visibility = 'hidden';
+    body.insertBefore(section, head);
+  
+    const desktopVE = [];
+  
+    while (desktopVersion.hasChildNodes()) {
+      desktopVE.push(desktopVersion.firstChild);
+      desktopVersion.removeChild(desktopVersion.firstChild);
+    }
+    body.removeChild(desktopVersion);
+  
+    window.scroll({
+      top: 0,
+      behavior: 'auto',
+    });
+  
+    document.querySelector('.closeMM').addEventListener('click', () => {
+      document.body.removeChild(section);
+  
+      body.appendChild(desktopVersion);
+      for (let i = 0; i <= desktopVE.length - 1; i += 1) {
+        desktopVersion.appendChild(desktopVE[i]);
+      }
+  
+      window.scroll({
+        top: 1100,
+        behavior: 'auto',
+      });
+    });
+  });
+
+break
+;
+  }
+
+
+
+
+
 }
 // end desktop menu
 
 // call function mobil_menu
-const seeP = document.querySelectorAll('.see_project');
-
-for (let i = 0; i < 7; i += 1) {
-  popupMobil(seeP[i]);
-}
+const seecoursemv = document.querySelector('.seecoursemv');
+const seetodolistmv = document.querySelector('.seetodolistmv')
+popupMobil(seecoursemv,"todolist")
+popupMobil(seetodolistmv,"responsivewp")
 //
 
 // desktop menu
-const seePD = document.querySelectorAll('.seeMM');
+const seetodo = document.querySelector('.seetodo');
+const seecourse = document.querySelector('.seecourse');
+popupDesktop(seetodo,"todolist")
+popupDesktop(seecourse,"course")
 
-for (let i = 0; i < 6; i += 1) {
-  popupDesktop(seePD[i]);
-}
+
 //
 
 /// //form validation
