@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 const header = document.querySelector('header');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 600) {
@@ -125,25 +126,24 @@ function css(variable, style) {
 // }
 
 //
-function popupMobil(botton,work) {
+function popupMobil(botton, work) {
+  switch (work) {
+    case 'todolist':
+      botton.addEventListener('click', () => {
+        const section = document.createElement('section');
+        section.className = 'container';
 
-  switch (work){
-case "todolist":
-  botton.addEventListener('click', () => {
-    const section = document.createElement('section');
-    section.className = 'container';
-  
-    css(section, {
-      width: '375px',
-      height: '882px',
-      background: '#C1C7D0',
-  
-      display: 'flex',
-      'justify-content': 'center',
-      'align-items': 'center',
-    });
-  
-    const mbversionelem = `
+        css(section, {
+          width: '375px',
+          height: '882px',
+          background: '#C1C7D0',
+
+          display: 'flex',
+          'justify-content': 'center',
+          'align-items': 'center',
+        });
+
+        const mbversionelem = `
   <div class="content" style="box-sizing: border-box;display: flex;flex-direction: column;align-items: flex-start;padding: 16px;gap: 12px;width: 343px;height: 836px;top: 20px;background: rgb(255, 255, 255);border: 1px solid rgb(223, 225, 230);border-radius: 16px;justify-content: space-between;"><img class="closeMM" src="images/popup_mobile/Icon.svg" style="position: absolute; margin-left: 276px; margin-top: 21px; cursor: pointer;">
   <iframe class="image" src="images/recent_works/todolist.mp4" style="height:50%"> </iframe>
   <h2 class="title" style="width: 259px;height: +;font-style: normal;font-weight: 600;font-size: 32px;line-height: 44px;color: rgb(23, 43, 77);margin: 0px;">To-do list</h2>
@@ -161,63 +161,59 @@ case "todolist":
   <span class="see P" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See source</span><img src="images/popup_mobile/IconGitHub.svg"></button></a>
   </li></ul></div>
   `;
-    section.innerHTML = mbversionelem;
-  
-    const head = document.querySelector('.header_mobile');
-    head.style.display = 'none';
-    const mobileVersion = document.querySelector('.mobile_version');
-    const mobileVE = [];
-  
-    while (mobileVersion.hasChildNodes()) {
-      mobileVE.push(mobileVersion.firstChild);
-      mobileVersion.removeChild(mobileVersion.firstChild);
-    }
-    document.body.removeChild(mobileVersion);
-    document.body.appendChild(section);
-  
-    window.scroll({
-      top: 0,
-      behavior: 'auto',
-    });
-  
-    document.querySelector('.closeMM').addEventListener('click', () => {
-      document.body.removeChild(section);
-  
-      head.style.visibility = 'visible';
-  
-      document.body.appendChild(mobileVersion);
-      for (let i = 0; i <= mobileVE.length - 1; i += 1) {
-        mobileVersion.appendChild(mobileVE[i]);
-      }
-  
-      window.scroll({
-        top: 700,
-        behavior: 'auto',
+        section.innerHTML = mbversionelem;
+
+        const head = document.querySelector('.header_mobile');
+        head.style.display = 'none';
+        const mobileVersion = document.querySelector('.mobile_version');
+        const mobileVE = [];
+
+        while (mobileVersion.hasChildNodes()) {
+          mobileVE.push(mobileVersion.firstChild);
+          mobileVersion.removeChild(mobileVersion.firstChild);
+        }
+        document.body.removeChild(mobileVersion);
+        document.body.appendChild(section);
+
+        window.scroll({
+          top: 0,
+          behavior: 'auto',
+        });
+
+        document.querySelector('.closeMM').addEventListener('click', () => {
+          document.body.removeChild(section);
+
+          head.style.visibility = 'visible';
+
+          document.body.appendChild(mobileVersion);
+          for (let i = 0; i <= mobileVE.length - 1; i += 1) {
+            mobileVersion.appendChild(mobileVE[i]);
+          }
+
+          window.scroll({
+            top: 700,
+            behavior: 'auto',
+          });
+        });
       });
-    });
-  });
-  
-break
-;
 
+      break;
+    case 'responsivewp':
+      botton.addEventListener('click', () => {
+        const section = document.createElement('section');
+        section.className = 'container';
 
+        css(section, {
+          width: '375px',
+          height: '882px',
+          background: '#C1C7D0',
 
-case "responsivewp":
-  botton.addEventListener('click', () => {
-    const section = document.createElement('section');
-    section.className = 'container';
-  
-    css(section, {
-      width: '375px',
-      height: '882px',
-      background: '#C1C7D0',
-  
-      display: 'flex',
-      'justify-content': 'center',
-      'align-items': 'center',
-    });
-  
-    const mbversionelem = `
+          display: 'flex',
+          'justify-content': 'center',
+          'align-items': 'center',
+        });
+
+        const mbversionelem = `
   <div class="content" style="box-sizing: border-box;display: flex;flex-direction: column;align-items: flex-start;padding: 16px;gap: 12px;width: 343px;height: 836px;top: 20px;background: rgb(255, 255, 255);border: 1px solid rgb(223, 225, 230);border-radius: 16px;justify-content: space-between;"><img class="closeMM" src="images/popup_mobile/Icon.svg" style="position: absolute; margin-left: 276px; margin-top: 21px; cursor: pointer;">
   <iframe class="image" src="images/recent_works/course.mp4" style="height:50%"> </iframe>
   <h2 class="title" style="width: 259px;height: +;font-style: normal;font-weight: 600;font-size: 32px;line-height: 44px;color: rgb(23, 43, 77);margin: 0px;">To-do list</h2>
@@ -235,86 +231,85 @@ case "responsivewp":
   <span class="see P" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See source</span><img src="images/popup_mobile/IconGitHub.svg"></button></a>
   </li></ul></div>
   `;
-    section.innerHTML = mbversionelem;
-  
-    const head = document.querySelector('.header_mobile');
-    head.style.display = 'none';
-    const mobileVersion = document.querySelector('.mobile_version');
-    const mobileVE = [];
-  
-    while (mobileVersion.hasChildNodes()) {
-      mobileVE.push(mobileVersion.firstChild);
-      mobileVersion.removeChild(mobileVersion.firstChild);
-    }
-    document.body.removeChild(mobileVersion);
-    document.body.appendChild(section);
-  
-    window.scroll({
-      top: 0,
-      behavior: 'auto',
-    });
-  
-    
-    document.querySelector('.closeMM').addEventListener('click', () => {
-      document.body.removeChild(section);
-  
-      head.style.visibility = 'visible';
-  
-      document.body.appendChild(mobileVersion);
-      for (let i = 0; i <= mobileVE.length - 1; i += 1) {
-        mobileVersion.appendChild(mobileVE[i]);
-      }
-  
-      window.scroll({
-        top: 700,
-        behavior: 'auto',
-      });
-    });
-  });
-break  
-;
+        section.innerHTML = mbversionelem;
 
+        const head = document.querySelector('.header_mobile');
+        head.style.display = 'none';
+        const mobileVersion = document.querySelector('.mobile_version');
+        const mobileVE = [];
+
+        while (mobileVersion.hasChildNodes()) {
+          mobileVE.push(mobileVersion.firstChild);
+          mobileVersion.removeChild(mobileVersion.firstChild);
+        }
+        document.body.removeChild(mobileVersion);
+        document.body.appendChild(section);
+
+        window.scroll({
+          top: 0,
+          behavior: 'auto',
+        });
+
+        document.querySelector('.closeMM').addEventListener('click', () => {
+          document.body.removeChild(section);
+
+          head.style.visibility = 'visible';
+
+          document.body.appendChild(mobileVersion);
+          for (let i = 0; i <= mobileVE.length - 1; i += 1) {
+            mobileVersion.appendChild(mobileVE[i]);
+          }
+
+          window.scroll({
+            top: 700,
+            behavior: 'auto',
+          });
+        });
+      });
+      break;
+
+    default: null;
   }
 }
 
 // desktop
 
-function popupDesktop(botton,work) {
-  switch(work){
-case "todolist":
+function popupDesktop(botton, work) {
+  switch (work) {
+    case 'todolist':
 
-  botton.addEventListener('click', () => {
-    const section = document.createElement('section');
-    section.className = 'container';
-  
-    css(section, {
-      width: '100vw',
-      height: '100vh',
-      background: '#C1C7D0',
-      display: 'flex',
-      'justify-content': 'center',
-      'align-items': 'center',
-    });
-  
-    const content = document.createElement('div');
-    content.className = 'content';
-  
-    css(content, {
-      'box-sizing': 'border-box',
-      display: 'flex',
-      'flex-wrap': 'wrap',
-      padding: '16px',
-      gap: '9px',
-      width: '67vh',
-      height: '87vh',
-      top: '20px',
-      background: ' #FFFFFF',
-      border: '1px solid #DFE1E6',
-      'border-radius': '16px',
-      'align-items': 'baseline',
-      'justify-content': 'space-between',
-    });
-    const todolist = `
+      botton.addEventListener('click', () => {
+        const section = document.createElement('section');
+        section.className = 'container';
+
+        css(section, {
+          width: '100vw',
+          height: '100vh',
+          background: '#C1C7D0',
+          display: 'flex',
+          'justify-content': 'center',
+          'align-items': 'center',
+        });
+
+        const content = document.createElement('div');
+        content.className = 'content';
+
+        css(content, {
+          'box-sizing': 'border-box',
+          display: 'flex',
+          'flex-wrap': 'wrap',
+          padding: '16px',
+          gap: '9px',
+          width: '67vh',
+          height: '87vh',
+          top: '20px',
+          background: ' #FFFFFF',
+          border: '1px solid #DFE1E6',
+          'border-radius': '16px',
+          'align-items': 'baseline',
+          'justify-content': 'space-between',
+        });
+        const todolist = `
   <img class="closeMM" src="images/popup_desktop/IconCancel.svg" style="margin-left: 97%; margin-top: 1%; cursor: pointer;">
   <iframe class="image" src="images/recent_works/todolist.mp4" style="width: 100%; border-radius: 8px; height: 60%;"></iframe>
   <h2 class="title" style="width: 359px; height: 68px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 24px; line-height: 32px; color: rgb(23, 43, 77); margin: 0px; text-align: start;">To-do list</h2>
@@ -323,81 +318,79 @@ case "todolist":
   <p style="width: 100%; height: 183px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 400; font-size: 16px; line-height: 24px; color: rgb(52, 69, 99); margin: 2% 0px 0px; text-align: start;">Use this project as a tool for remembering your daily tasks, confirming, editing, remove are actions you can do to tasks, your data is saved in the LocalStorage so every time you open or refresh the page all changes will be present.</p>
   
   `;
-  
-    content.innerHTML = todolist;
-    section.appendChild(content);
-  
-    const desktopVersion = document.querySelector('.desktop_version');
-    const head = document.querySelector('.backgrund_main');
-    const body = document.querySelector('body');
-    // head.style.visibility = 'hidden';
-    body.insertBefore(section, head);
-  
-    const desktopVE = [];
-  
-    while (desktopVersion.hasChildNodes()) {
-      desktopVE.push(desktopVersion.firstChild);
-      desktopVersion.removeChild(desktopVersion.firstChild);
-    }
-    body.removeChild(desktopVersion);
-  
-    window.scroll({
-      top: 0,
-      behavior: 'auto',
-    });
-  
-    document.querySelector('.closeMM').addEventListener('click', () => {
-      document.body.removeChild(section);
-  
-      body.appendChild(desktopVersion);
-      for (let i = 0; i <= desktopVE.length - 1; i += 1) {
-        desktopVersion.appendChild(desktopVE[i]);
-      }
-  
-      window.scroll({
-        top: 1100,
-        behavior: 'auto',
+
+        content.innerHTML = todolist;
+        section.appendChild(content);
+
+        const desktopVersion = document.querySelector('.desktop_version');
+        const head = document.querySelector('.backgrund_main');
+        const body = document.querySelector('body');
+        // head.style.visibility = 'hidden';
+        body.insertBefore(section, head);
+
+        const desktopVE = [];
+
+        while (desktopVersion.hasChildNodes()) {
+          desktopVE.push(desktopVersion.firstChild);
+          desktopVersion.removeChild(desktopVersion.firstChild);
+        }
+        body.removeChild(desktopVersion);
+
+        window.scroll({
+          top: 0,
+          behavior: 'auto',
+        });
+
+        document.querySelector('.closeMM').addEventListener('click', () => {
+          document.body.removeChild(section);
+
+          body.appendChild(desktopVersion);
+          for (let i = 0; i <= desktopVE.length - 1; i += 1) {
+            desktopVersion.appendChild(desktopVE[i]);
+          }
+
+          window.scroll({
+            top: 1100,
+            behavior: 'auto',
+          });
+        });
       });
-    });
-  });
 
-break
-;
+      break;
+    case 'course':
 
-case "course":
+      botton.addEventListener('click', () => {
+        const section = document.createElement('section');
+        section.className = 'container';
 
-  botton.addEventListener('click', () => {
-    const section = document.createElement('section');
-    section.className = 'container';
-  
-    css(section, {
-      width: '100vw',
-      height: '100vh',
-      background: '#C1C7D0',
-      display: 'flex',
-      'justify-content': 'center',
-      'align-items': 'center',
-    });
-  
-    const content = document.createElement('div');
-    content.className = 'content';
-  
-    css(content, {
-      'box-sizing': 'border-box',
-      display: 'flex',
-      'flex-wrap': 'wrap',
-      padding: '16px',
-      gap: '9px',
-      width: '67vh',
-      height: '87vh',
-      top: '20px',
-      background: ' #FFFFFF',
-      border: '1px solid #DFE1E6',
-      'border-radius': '16px',
-      'align-items': 'baseline',
-      'justify-content': 'space-between',
-    });
-    const todolist = `
+        css(section, {
+          width: '100vw',
+          height: '100vh',
+          background: '#C1C7D0',
+          display: 'flex',
+          'justify-content': 'center',
+          'align-items': 'center',
+        });
+
+        const content = document.createElement('div');
+        content.className = 'content';
+
+        css(content, {
+          'box-sizing': 'border-box',
+          display: 'flex',
+          'flex-wrap': 'wrap',
+          padding: '16px',
+          gap: '9px',
+          width: '67vh',
+          height: '87vh',
+          top: '20px',
+          background: ' #FFFFFF',
+          border: '1px solid #DFE1E6',
+          'border-radius': '16px',
+          'align-items': 'baseline',
+          'justify-content': 'space-between',
+        });
+        const todolist = `
   <img class="closeMM" src="images/popup_desktop/IconCancel.svg" style="margin-left: 97%; margin-top: 1%; cursor: pointer;">
   <iframe class="image" src="images/recent_works/course.mp4" style="width: 100%; border-radius: 8px; height: 60%;"></iframe>
   <h2 class="title" style="width: 359px; height: 68px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 24px; line-height: 32px; color: rgb(23, 43, 77); margin: 0px; text-align: start;">Development course web page</h2>
@@ -406,68 +399,62 @@ case "course":
   <p style="width: 100%; height: 183px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 400; font-size: 16px; line-height: 24px; color: rgb(52, 69, 99); margin: 2% 0px 0px; text-align: start;">Use a responsive web page, to add several sections to your web page and show activities like, courses, events, concerts, etc.</p>
   
   `;
-  
-    content.innerHTML = todolist;
-    section.appendChild(content);
-  
-    const desktopVersion = document.querySelector('.desktop_version');
-    const head = document.querySelector('.backgrund_main');
-    const body = document.querySelector('body');
-    // head.style.visibility = 'hidden';
-    body.insertBefore(section, head);
-  
-    const desktopVE = [];
-  
-    while (desktopVersion.hasChildNodes()) {
-      desktopVE.push(desktopVersion.firstChild);
-      desktopVersion.removeChild(desktopVersion.firstChild);
-    }
-    body.removeChild(desktopVersion);
-  
-    window.scroll({
-      top: 0,
-      behavior: 'auto',
-    });
-  
-    document.querySelector('.closeMM').addEventListener('click', () => {
-      document.body.removeChild(section);
-  
-      body.appendChild(desktopVersion);
-      for (let i = 0; i <= desktopVE.length - 1; i += 1) {
-        desktopVersion.appendChild(desktopVE[i]);
-      }
-  
-      window.scroll({
-        top: 1100,
-        behavior: 'auto',
+
+        content.innerHTML = todolist;
+        section.appendChild(content);
+
+        const desktopVersion = document.querySelector('.desktop_version');
+        const head = document.querySelector('.backgrund_main');
+        const body = document.querySelector('body');
+        // head.style.visibility = 'hidden';
+        body.insertBefore(section, head);
+
+        const desktopVE = [];
+
+        while (desktopVersion.hasChildNodes()) {
+          desktopVE.push(desktopVersion.firstChild);
+          desktopVersion.removeChild(desktopVersion.firstChild);
+        }
+        body.removeChild(desktopVersion);
+
+        window.scroll({
+          top: 0,
+          behavior: 'auto',
+        });
+
+        document.querySelector('.closeMM').addEventListener('click', () => {
+          document.body.removeChild(section);
+
+          body.appendChild(desktopVersion);
+          for (let i = 0; i <= desktopVE.length - 1; i += 1) {
+            desktopVersion.appendChild(desktopVE[i]);
+          }
+
+          window.scroll({
+            top: 1100,
+            behavior: 'auto',
+          });
+        });
       });
-    });
-  });
 
-break
-;
+      break;
+    default: null;
   }
-
-
-
-
-
 }
 // end desktop menu
 
 // call function mobil_menu
 const seecoursemv = document.querySelector('.seecoursemv');
-const seetodolistmv = document.querySelector('.seetodolistmv')
-popupMobil(seecoursemv,"todolist")
-popupMobil(seetodolistmv,"responsivewp")
+const seetodolistmv = document.querySelector('.seetodolistmv');
+popupMobil(seecoursemv, 'todolist');
+popupMobil(seetodolistmv, 'responsivewp');
 //
 
 // desktop menu
 const seetodo = document.querySelector('.seetodo');
 const seecourse = document.querySelector('.seecourse');
-popupDesktop(seetodo,"todolist")
-popupDesktop(seecourse,"course")
-
+popupDesktop(seetodo, 'todolist');
+popupDesktop(seecourse, 'course');
 
 //
 
