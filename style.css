@@ -904,6 +904,8 @@
     height: 72px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: 2em;
   }
 
   .desktop_header {
@@ -925,9 +927,10 @@
 
   .desktop_header ul {
     display: flex;
-    width: 255px;
+    width: 100%;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
+    gap: 59px;
     height: 40px;
     padding: 0;
     margin: 0;
