@@ -77,15 +77,6 @@ document.querySelector('.about_go').addEventListener('click', () => {
   });
 });
 
-//
-
-// functions styles and properties
-
-// function setAttributes(element, attributes) {
-//   Object.keys(attributes).forEach((attr) => {
-//     element.setAttribute(attr, attributes[attr]);
-//   });
-// }
 
 function css(variable, style) {
   Object.keys(style).forEach((attr) => {
@@ -93,39 +84,7 @@ function css(variable, style) {
   });
 }
 
-// buttons hover and mouseout
-// function bottonEventOutA(event) {
-//   event.addEventListener('mouseout', () => {
-//     event.style.backgroundColor = '#36B37F';
 
-//     event.style.cursor = 'pointer';
-//   });
-// }
-
-// function bottonEventA(event) {
-//   event.addEventListener('mouseover', () => {
-//     event.style.backgroundColor = 'green';
-
-//     event.style.cursor = 'pointer';
-//   });
-// }
-
-// function bottonEventOut(event) {
-//   event.addEventListener('mouseout', () => {
-//     event.style.backgroundColor = 'rgb(238, 248, 243)';
-
-//     event.style.cursor = 'pointer';
-//   });
-// }
-// function bottonEvent(event) {
-//   event.addEventListener('mouseover', () => {
-//     event.style.backgroundColor = '#ebeff4';
-
-//     event.style.cursor = 'pointer';
-//   });
-// }
-
-//
 function popupMobil(botton, work) {
   switch (work) {
     case 'todolist':
@@ -216,7 +175,7 @@ function popupMobil(botton, work) {
         const mbversionelem = `
   <div class="content" style="box-sizing: border-box;display: flex;flex-direction: column;align-items: flex-start;padding: 16px;gap: 12px;width: 343px;height: 836px;top: 20px;background: rgb(255, 255, 255);border: 1px solid rgb(223, 225, 230);border-radius: 16px;justify-content: space-between;"><img class="closeMM" src="images/popup_mobile/Icon.svg" style="position: absolute; margin-left: 276px; margin-top: 21px; cursor: pointer;">
   <iframe class="image" src="images/recent_works/course.mp4" style="height:50%"> </iframe>
-  <h2 class="title" style="width: 259px;height: +;font-style: normal;font-weight: 600;font-size: 32px;line-height: 44px;color: rgb(23, 43, 77);margin: 0px;">To-do list</h2>
+  <h2 class="title" style="width: 259px;height: +;font-style: normal;font-weight: 600;font-size: 32px;line-height: 44px;color: rgb(23, 43, 77);margin: 0px;">Development course web page</h2>
   <ul class="works_buttons" style="list-style: none; display: flex; flex-direction: row; align-items: center; padding: 0px; gap: 8px; margin: 0px; width: 246px; height: 32px;">
   <li class="tools"><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
   <span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">Ruby on rails</span>
@@ -392,7 +351,7 @@ function popupDesktop(botton, work) {
           'align-items': 'baseline',
           'justify-content': 'space-between',
         });
-        const todolist = `
+        const course = `
   <img class="closeMM" src="images/popup_desktop/IconCancel.svg" style="margin-left: 97%; margin-top: 1%; cursor: pointer;">
   <iframe class="image" src="images/recent_works/course.mp4" style="width: 100%; border-radius: 8px; height: 60%;"></iframe>
   <h2 class="title" style="width: 359px; height: 68px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 24px; line-height: 32px; color: rgb(23, 43, 77); margin: 0px; text-align: start;">Development course web page</h2>
@@ -404,13 +363,12 @@ function popupDesktop(botton, work) {
   
   `;
 
-        content.innerHTML = todolist;
+        content.innerHTML = course;
         section.appendChild(content);
 
         const desktopVersion = document.querySelector('.desktop_version');
         const head = document.querySelector('.backgrund_main');
         const body = document.querySelector('body');
-        // head.style.visibility = 'hidden';
         body.insertBefore(section, head);
 
         const desktopVE = [];
