@@ -131,6 +131,10 @@
     position: fixed;
     background-color: white;
   }
+  
+  .scale:hover {
+    transform: scale(1.2);
+  }
 
   .taskbar {
     width: 100%;
@@ -338,6 +342,7 @@
   .see_project:hover {
     background-color: rgb(25, 129, 25);
     cursor: pointer;
+    transform: scale(1.05);
   }
 
   /* languages */
