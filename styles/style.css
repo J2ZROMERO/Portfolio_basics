@@ -868,12 +868,15 @@
   body {
     width: 100%;
     margin: 0;
+    
   }
 
   html {
     width: 100%;
     display: flex;
     justify-content: center;
+    scroll-padding-top: 72px;
+
   }
 
   .mobile_version {
@@ -887,20 +890,20 @@
   .desktop_version {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1139px  1289px 824px 707px 90px;
+    grid-template-rows: 96vh  150vh 100vh 100vh 100vh;
   }
 
   .background_main {
     background-image: url(../images/desktop_version/Header-llustration-desktop.svg);
     background-repeat: no-repeat;
     background-position: top;
-    height: 100%;
+    height: 88vh;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 0;
+    margin: 72px 0 0 0;
+    justify-content: center;
     align-items: center;
-    background-size: 100%;
+    flex-wrap: wrap;
+    background-size: cover;
   }
 
   .menu {
@@ -911,19 +914,22 @@
     width: 100%;
     height: 72px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     font-size: 2em;
   }
+
+
 
   .desktop_header {
     width: 100%;
     display: flex;
     justify-content: center;
+    position: fixed;
+    background-color: white;
   }
 
   .desktop_header ul > * {
-    width: 87px;
     list-style: none;
     height: 40px;
     padding: 10px 12px 0 0;
@@ -931,39 +937,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
+margin-right: 3%;
   }
 
   .desktop_header ul {
     display: flex;
-    width: 100%;
+    width: 80%;
     align-items: center;
-    justify-content: center;
-    gap: 59px;
+    justify-content: flex-end;
     height: 40px;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   .wrap_desktop {
-    width: 57%;
-    margin-top: 7%;
-    height: 48%;
+    width: 50%;
+    height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+
   }
 
   .social_media_icons {
     list-style-type: none;
-    width: 200px;
-    height: 40px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 3%;
     align-items: center;
     margin: 0;
-    padding: 0;
-    margin-top: 24px;
+    padding: 9% 0 0 0;
+    
   }
 
   .introduction {
@@ -979,7 +985,6 @@
     color: #172b4d;
     color: normal;
     flex-grow: 0;
-    height: 120px;
     margin: 0;
   }
 
@@ -989,7 +994,6 @@
 
   .content_introduction {
     width: 100%;
-    height: 96px;
     font-family: "Inter", sans-serif !important;
     font-style: normal;
     font-weight: 400;
