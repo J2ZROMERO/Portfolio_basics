@@ -12,6 +12,9 @@
 
 <body>
 
+
+<!-- popup mobile -->
+
     <nav class="quick_acces">
         <ul class="quick_access_ul">
             <li class="close"><img src="images/Icon.svg" alt=""></li>
@@ -29,6 +32,7 @@
             </nav>
         </div>
     </header>    
+<!--  -->
 
  <div class="mobile_version">
     <div class="welcome_view">
@@ -435,32 +439,26 @@
 
 
 <!--Desktop version-->
+<header class="desktop_header">
+                
+                
+    <nav class="menu_items">
+      <ul>
+        <li><a href="#portofolio">Portofolio </a>  </li>
+        <li> <a href="#about">About</a></li>
+        <li><a href="#contact"> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+</header>
 <div class="desktop_version">
     <div class="welcome_view">
 
-        <header>
-            <div class="menu">
-                <a href="#" class="logo"> Welcome </a>
-                <nav class="menu_img">
-                    <img src="images/Enabledmenu_bar.svg" alt="">
-                </nav>
-            </div>
-        </header>
-
+        
         <div class="background_main">
-            <header class="desktop_header">
-                
-                
-                    <nav class="menu_items">
-                      <ul>
-                        <li><a href="#">Portofolio </a>  </li>
-                        <li> <a href="#">About</a></li>
-                        <li><a href="#contact"> Contact</a></li>
-                        
-                      </ul>
-                    </nav>
-                
-            </header>
+            
+            
             
             
             <div class="wrap_desktop">
@@ -484,8 +482,8 @@
     </div>
 
 <div class="recent_jobs_group">
-    <section >
-        <div >
+    <section id="portofolio_section"  >
+        <div>
 
             <h2 class="title_header">My Recent Works</h2>
          
@@ -623,7 +621,7 @@
 
 <div class="lenguajes_desktop">
 
-    <div class="about_section">
+    <div id="about_section" class="about_section">
         <h2 class="about_me">About me</h2>
         <p class="content"> I can help you build a product , feature or website Look through some of my work and
             experience!
@@ -733,7 +731,7 @@
 
 
 
-<div class="about_main">
+<div id="opinion_section" class="about_main">
 
     <div class="opinion_main">
 
@@ -746,16 +744,6 @@
     </div>
 
 
-<!-- JavaScript code to handle the scrolling -->
-<script>
-    const aboutLink = document.querySelector('a[href="#contact"]');
-  
-    aboutLink.addEventListener('click', (event) => {
-      event.preventDefault(); // prevent the default link behavior
-      const aboutSection = document.querySelector('#form');
-      aboutSection.scrollIntoView({ behavior: 'smooth' }); // scroll to the About section
-    });
-  </script>
 
 
     <div id="form" class="form_main">
@@ -822,6 +810,7 @@
 <img class="icon_bottom cube" src="images/desktop_version/illustration-1-contact-form-desktop.svg" alt="">
 <img class="icon_bottom rock" src="images/desktop_version/illustration-2-contact-form-desktop.svg" alt="">
 </div>
+<script src="js/navbar.js"></script>
 <script src="js/index.js"></script>
 <script src="js/indexmobile.js"></script>
 </body>

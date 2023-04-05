@@ -186,96 +186,9 @@ function popupDesktop(botton, work) {
 }
 // end desktop menu
 
-// call function mobil_menu
-
-//
 
 // desktop menu
 const seetodo = document.querySelector('.seetodo');
 const seecourse = document.querySelector('.seecourse');
 popupDesktop(seetodo, 'todolist');
 popupDesktop(seecourse, 'course');
-
-// desktop form
-const email = document.getElementById('mail');
-
-const characters = /^[a-z0-9-]+@[a-z0-9]+\.[a-z0-9.]+$/;
-
-document.querySelector('.form_button').addEventListener('click', (event) => {
-  if (!characters.test(email.value)) {
-    const error = document.querySelector('.error');
-
-    error.style.display = 'block';
-
-    event.preventDefault();
-    if (email.value === '') {
-      error.style.display = 'none';
-    }
-  }
-});
-
-email.addEventListener('input', () => {
-  if (characters.test(email.value)) {
-    const error = document.querySelector('.error');
-    error.style.display = 'none';
-  }
-});
-
-const emailD = document.getElementById('mailD');
-const charactersD = /^[a-z0-9-]+@[a-z0-9]+\.[a-z0-9.]+$/;
-
-document.querySelector('.form_buttonD').addEventListener('click', (event) => {
-  const errorD = document.querySelector('.errorD');
-
-  if (!charactersD.test(emailD.value)) {
-    errorD.style.display = 'block';
-
-    event.preventDefault();
-    if (emailD.value === '') {
-      errorD.style.display = 'none';
-    }
-  }
-});
-
-emailD.addEventListener('input', () => {
-  if (charactersD.test(emailD.value)) {
-    const errorD = document.querySelector('.errorD');
-    errorD.style.display = 'none';
-  }
-});
-
-
-// desktop Local storage
-const nameID = document.querySelector('.name_inputD');
-const snameID = document.querySelector('.sname_inputD');
-const emailID = document.querySelector('.email_inputD');
-const textID = document.querySelector('.textareaD');
-
-const inputsD = [nameID, snameID, emailID, textID];
-
-for (let i = 0; i < inputsD.length; i += 1) {
-  inputsD[i].addEventListener('input', () => {
-    const dataD = {
-      nameV: nameID.value,
-      snameV: snameID.value,
-      emailV: emailID.value,
-      textAV: textID.value,
-    };
-
-    localStorage.setItem('dataFormUserD', JSON.stringify(dataD));
-  });
-}
-
-
-// desktop Local event storage
-window.addEventListener('load', () => {
-  let dataLS = localStorage.getItem('dataFormUserD');
-  dataLS = JSON.parse(dataLS);
-
-  if (dataLS != null) {
-    nameID.value = dataLS.nameV;
-    snameID.value = dataLS.snameV;
-    emailID.value = dataLS.emailV;
-    textID.value = dataLS.textAV;
-  }
-});
