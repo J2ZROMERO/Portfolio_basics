@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     
 </head>
 
@@ -413,11 +413,11 @@
 
         <div class="contact_section">
             <ul class="contact_social_media_icons">
-                <li class="twitter"><a href="https://twitter.com/JOSEZEPED4"> <img src="images/twitter.svg" alt="twitter"></a> </li>
-                <li class="linkedin"><a href="https://www.linkedin.com/in/jose-zepeda-733ab91ab/"><img src="images/Linkedin.svg" alt="linkedin"></a></li>
-                <li class="medium"><a href="https://medium.com/@j0s3jzr"><img src="images/medium.svg" alt="medium"></a></li>
-                <li class="github"><a href="https://github.com/J2ZROMERO"><img src="images/github.svg" alt="github"></a></li>
-                <li class="angellist"><a href="#"><img src="images/angellist.svg" alt="angellist"></a></li>
+                <li class="twitter"><a href="https://twitter.com/JOSEZEPED4"> <img src="images/twitter.svg" class="scale" alt="twitter"></a> </li>
+                <li class="linkedin"><a href="https://www.linkedin.com/in/jose-zepeda-733ab91ab/"><img src="images/Linkedin.svg" class="scale" alt="linkedin"></a></li>
+                <li class="medium"><a href="https://medium.com/@j0s3jzr"><img src="images/medium.svg" class="scale" alt="medium"></a></li>
+                <li class="github"><a href="https://github.com/J2ZROMERO"><img src="images/github.svg" class="scale" alt="github"></a></li>
+                <li class="angellist"><a href="#"><img src="images/angellist.svg" class="scale" alt="angellist"></a></li>
             </ul>
             <p class="email">jose-zromero@hotmail.com</p>
 
@@ -455,7 +455,7 @@
                       <ul>
                         <li><a href="#">Portofolio </a>  </li>
                         <li> <a href="#">About</a></li>
-                        <li><a href="#"> Contact</a></li>
+                        <li><a href="#contact"> Contact</a></li>
                         
                       </ul>
                     </nav>
@@ -471,11 +471,11 @@
                     what you see and have a project you need coded,
                     don’t hestiate to contact me.</p>
                 <ul class="social_media_icons">
-                    <li class="twitter"><a href="https://twitter.com/JOSEZEPED4"> <img src="images/twitter.svg" alt="twitter"></a> </li>
-                    <li class="linkedin"><a href="https://www.linkedin.com/in/jose-zepeda-733ab91ab/"><img src="images/Linkedin.svg" alt="linkedin"></a></li>
-                    <li class="medium"><a href="https://medium.com/@j0s3jzr"><img src="images/medium.svg" alt="medium"></a></li>
-                    <li class="github"><a href="https://github.com/J2ZROMERO"><img src="images/github.svg" alt="github"></a></li>
-                    <li class="angellist"><a href="#"><img src="images/angellist.svg" alt="angellist"></a></li>
+                    <li class="twitter"><a href="https://twitter.com/JOSEZEPED4"> <img src="images/twitter.svg" class="scale" alt="twitter"></a> </li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/jose-zepeda-733ab91ab/"><img src="images/Linkedin.svg" class="scale" alt="linkedin"></a></li>
+                    <li class="medium"><a href="https://medium.com/@j0s3jzr"><img src="images/medium.svg" class="scale" alt="medium"></a></li>
+                    <li class="github"><a href="https://github.com/J2ZROMERO"><img src="images/github.svg" class="scale" alt="github"></a></li>
+                    <li class="angellist"><a href="#"><img src="images/angellist.svg" class="scale" alt="angellist"></a></li>
                     
                 </ul>
                 <a class="row_down" href="#"><img src="images/Action.svg" alt="Action"></a>
@@ -520,12 +520,11 @@
 
     <h3 class="works_title">Responsive web page</h3>
     <ul class="works_buttons">
-                <li class="tools"><button class="button_work" value="Input Buttom" type="submit">css</button>
-        </li>
-        <li class="tools"><button class="button_work" value="Input Buttom"
-                type="submit">Javascript</button></li>
-        <li class="tools"><button class="button_work" value="Input Buttom" type="submit">html</button>
-        </li>
+        <li class="tools"><button class="button_work" value="Input Buttom" type="submit">Webpack</button></li>
+        <li class="tools"><button class="button_work" value="Input Buttom" type="submit">Eslint</button></li>
+        <li class="tools"><button class="button_work" value="Input Buttom" type="submit">Flexbox</button></li>
+        <li class="tools"><button class="button_work" value="Input Buttom" type="submit">Jest</button></li>
+        <li class="tools"><button class="button_work" value="Input Buttom" type="submit">ES6</button></li>
     </ul>
 
     <button class="see_project seecourse" type="submit">see project</button>
@@ -746,7 +745,20 @@
         </div>
     </div>
 
-    <div class="form_main">
+
+<!-- JavaScript code to handle the scrolling -->
+<script>
+    const aboutLink = document.querySelector('a[href="#contact"]');
+  
+    aboutLink.addEventListener('click', (event) => {
+      event.preventDefault(); // prevent the default link behavior
+      const aboutSection = document.querySelector('#form');
+      aboutSection.scrollIntoView({ behavior: 'smooth' }); // scroll to the About section
+    });
+  </script>
+
+
+    <div id="form" class="form_main">
 
 
 
@@ -793,11 +805,11 @@
 <div class="contact_section">
     <img class="divisor" src="images/desktop_version/Rectangle42.png" alt="">
     <ul class="contact_social_media_icons">
-        <li class="twitter"><a href="#"> <img src="images/twitter.svg" alt="twitter"></a> </li>
-        <li class="linkedin"><a href="#"><img src="images/Linkedin.svg" alt="linkedin"></a></li>
-        <li class="medium"><a href="#"><img src="images/medium.svg" alt="medium"></a></li>
-        <li class="github"><a href="#"><img src="images/github.svg" alt="github"></a></li>
-        <li class="angellist"><a href="#"><img src="images/angellist.svg" alt="angellist"></a></li>
+        <li class="twitter"><a href="#"> <img src="images/twitter.svg" class="scale" alt="twitter"></a> </li>
+        <li class="linkedin"><a href="#"><img src="images/Linkedin.svg" class="scale" alt="linkedin"></a></li>
+        <li class="medium"><a href="#"><img src="images/medium.svg" class="scale" alt="medium"></a></li>
+        <li class="github"><a href="#"><img src="images/github.svg" class="scale" alt="github"></a></li>
+        <li class="angellist"><a href="#"><img src="images/angellist.svg" class="scale" alt="angellist"></a></li>
     </ul>
     
 
@@ -810,10 +822,12 @@
 <img class="icon_bottom cube" src="images/desktop_version/illustration-1-contact-form-desktop.svg" alt="">
 <img class="icon_bottom rock" src="images/desktop_version/illustration-2-contact-form-desktop.svg" alt="">
 </div>
-<script src="index.js"></script>
+<script src="js/index.js"></script>
+<script src="js/indexmobile.js"></script>
 </body>
 <!--end desktop-->
 
 </html>
+
 
 
