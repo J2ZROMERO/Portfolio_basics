@@ -66,6 +66,7 @@ body{
                  width: 101px;
                   border-radius: 4px; 
                   justify-content: end;
+                  cursor: pointer;
             }
             .see P {
             width: 72px;
@@ -92,44 +93,6 @@ body{
                      justify-content: flex-start;
             }
                 
-.wb_action{
-    height: 32px; 
-    font-style: normal;
-     font-weight: 600;
-      letter-spacing: 0.03em; 
-      color: rgb(58, 74, 66);
-       background-color: rgb(238, 248, 243);
-        border: 0px;
-         border-radius: 4px;
-          font-family: sans-serif; 
-          padding: 6px; 
-          cursor: pointer
-          
-}
-.tol {
-    height: 15px; 
-    font-family:  sans-serif;
-     font-style: normal; 
-     font-size: 0.62em; 
-     line-height: 16px;
-      letter-spacing: 0.03em; 
-      color: rgb(52, 69, 99); 
-      font-weight: bolder
-      
-}
-
-.wb_action {
-    height: 32px; 
-    font-style: normal;
-     font-weight: 600;
-      letter-spacing: 0.03em;
-       color: rgb(58, 74, 66);
-        background-color: rgb(238, 248, 243);
-         border: 0px; border-radius: 4px; 
-         font-family:sans-serif;
-          padding: 6px; 
-          cursor: pointer
-}
         .Git{
 
         height: 19px; 
@@ -145,7 +108,6 @@ body{
 
 .text {
    width: 100%; 
-   height: 183px; 
    font-family: sans-serif; 
    font-style: normal; 
    font-weight: 400;
@@ -155,3 +117,18 @@ body{
        margin: 2% 0px 0px; 
        text-align: start;
 }
+
+
+/* 
+.tol {
+    height: 15px; 
+    font-family:  sans-serif;
+     font-style: normal; 
+     font-size: 0.62em; 
+     line-height: 16px;
+      letter-spacing: 0.03em; 
+      color: rgb(52, 69, 99); 
+      font-weight: bolder
+      
+}
+*/

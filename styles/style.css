@@ -1,5 +1,6 @@
 @import "../node_modules/normalize.css/normalize.css";
 @import url(./popupStyle.css);
+@import url(./events.css);
 
 @media only screen and (max-width: 767px) {
   * {
@@ -135,10 +136,7 @@
     background-color: white;
   }
   
-  .scale:hover {
-    transform: scale(1.2);
-  }
-
+  
   .taskbar {
     width: 100%;
     height: 20%;
@@ -293,19 +291,7 @@
     font-family: 'Inter UI', sans-serif;
   }
 
-  .tools button {
-    height: 32px;
-    background-color: #eef8f3;
-    color: black;
-    border: 0;
-    border-radius: 4px;
-    padding: 8px, 12px, 8px, 12px;
-    font-family: 'Inter UI', sans-serif;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  
 
   .works_buttons li button:active {
     color: red;
@@ -338,16 +324,6 @@
     font-family: 'Inter UI', sans-serif;
   }
 
-  .see_project:active {
-    color: red;
-  }
-
-  .see_project:hover {
-    background-color: rgb(25, 129, 25);
-    cursor: pointer;
-    transform: scale(1.05);
-  }
-
   /* languages */
 
   .languages_buttons {
@@ -367,16 +343,7 @@
     align-self: center;
   }
 
-  .languages_section {
-    width: 327px;
-    height: 352px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 11px;
-    background-color: #eef8f3;
-    border: 1px solid #ccc;
-  }
-
+ 
   .languages_img {
     width: 100%;
     height: 50%;
@@ -480,18 +447,6 @@
     margin-bottom: 4%;
   }
 
-  .button_frame {
-    height: 40px;
-    background-color: white;
-    color: #36b37e;
-    border: 0;
-    border-radius: 4px;
-    font-family: 'Inter UI', sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 12px;
-  }
-
   .framework_button_action {
     display: flex;
     flex-wrap: wrap;
@@ -506,18 +461,6 @@
     padding: 4px;
   }
 
-  .button_frame:active {
-    color: red;
-  }
-
-  .framework_buttons li button:hover {
-    background-color: rgb(199, 202, 199);
-    cursor: pointer;
-  }
-
-  .framework li button:hover {
-    background-color: rgb(199, 202, 199);
-  }
 
   /* skills */
 
@@ -529,13 +472,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-  }
-
-  .skills_main {
-    width: 100%;
-    height: 360px;
-    display: flex;
-    justify-content: center;
   }
 
   .skills_section {
@@ -868,7 +804,6 @@
   body {
     width: 100%;
     margin: 0;
-    
   }
 
   html {
@@ -876,8 +811,8 @@
     display: flex;
     justify-content: center;
     scroll-padding-top: 72px;
-
   }
+  
 
   .mobile_version {
     display: none;
@@ -953,7 +888,7 @@ margin-right: 3%;
 
   .wrap_desktop {
     width: 50%;
-    height: 50%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1027,10 +962,10 @@ margin-right: 3%;
 
   .recent_works {
     width: 369px;
-    height: 474px;
     display: flex;
     background: #ebf0ee;
     border: 1px solid #d0d9d4;
+    min-height: 500px;
     border-radius: 8px;
     margin: 1% 10px;
     flex-wrap: wrap;
@@ -1065,14 +1000,14 @@ margin-right: 3%;
   .works_button_action {
     background-color: white;
     width: 369px;
-    height: 200px;
     border-radius: 8px;
     gap: 16px;
-    padding: 15px;
+    padding: 1% 0 1% 0;
     align-self: end;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .works_title {
@@ -1095,32 +1030,14 @@ margin-right: 3%;
     align-items: center;
     padding: 0;
     gap: 8px;
-    width: 305px;
-    height: 32px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
     flex: none;
     flex-grow: 0;
     list-style: none;
     margin: 0%;
     justify-content: center;
-  }
-
-  .tools button {
-    border-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 5px;
-    height: 32px;
-    background: #ebf0ee;
-    border-radius: 4px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    color: #172b4d;
   }
 
   .see_project {
@@ -1137,7 +1054,7 @@ margin-right: 3%;
     font-family: sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 24px;
     display: flex;
     justify-content: center;
@@ -1145,13 +1062,13 @@ margin-right: 3%;
     letter-spacing: 0.03em;
     color: #fff;
     flex-grow: 0;
+    margin-bottom: 3%;
   }
 
   .lenguajes_desktop {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 80px 0;
     gap: 48px;
     flex-wrap: wrap;
@@ -1159,14 +1076,12 @@ margin-right: 3%;
     justify-self: center;
   }
 
-  .languages_section,
-  .framework_section,
   .skills_section {
     background: #ebf0ee;
     border: 1px solid #c1c7d0;
     border-radius: 8px;
     width: 358px;
-    height: 352px;
+    min-height: 352px;
     margin-top: 3%;
   }
 
@@ -1191,8 +1106,10 @@ margin-right: 3%;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 58%;
-    margin-top: 10%;
+    /* height: 58%; */
+    gap: 25px;
+    /* margin-top: 10%; */
+    margin: 0% 0 6% 0;
   }
 
   .languages_buttons,
@@ -1204,45 +1121,30 @@ margin-right: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.95%;
-    width: 76.99%;
-    height: 50%;
+    gap: 10px 10px;
+    width: 90%;
+    /* height: 50%; */
     flex-wrap: wrap;
-    margin-top: 13px;
+    /* margin-top: 13px; */
   }
 
   .languages_img,
   .framework_img,
   .skills_img {
     width: 100%;
-    height: 128px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10.8%;
-    margin-top: 4.34%;
-  }
-
-  .button_languages,
-  .button_frame,
-  .button_skills {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
-    background: #fff;
-    border-radius: 8px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    color: #36b37e;
-    border-style: none;
+  margin-top: 10%;
   }
 
   .about_section {
+    background-image: 
+     url(../images/desktop_version/Group.svg),
+     url(../images/desktop_version/illustration-about-me-2-desktop.svg);
+    background-size: 10%, 20%;
+    background-position: right top, left bottom;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1310,6 +1212,10 @@ margin-right: 3%;
     margin: -117% 1204.58px 1224.18px 0;
   }
 
+  .contenedor_imagen {
+    max-height: 265px;
+
+  }
   .about_main {
     background-image: 
     url(../images/desktop_version/illustration-1-contact-form-desktop.svg),
@@ -1498,32 +1404,6 @@ margin-right: 3%;
     width: 11%;
   }
 
-  .see_project:hover {
-    background-color: #36b37f;
-    cursor: pointer;
-  }
-
-  .see_project:active,
-  .about_button:hover {
-    background-color: #008552;
-  }
-
-  .works_buttons li button:active {
-    color: red;
-  }
-
-  .button_languages:hover,
-  .button_frame:hover,
-  .button_skills:hover {
-    background-color: #b3c2be;
-    cursor: pointer;
-  }
-
-  .button_work:hover {
-    cursor: pointer;
-    background-color: #b3c2be;
-  }
-
   .span {
     color: #36b37e;
   }
@@ -1542,7 +1422,52 @@ margin-right: 3%;
     width: 100%;
   }
   
-  .scale:hover {
-    transform: scale(1.2);
+  .skills_main{ 
+    
+    height: 28%;
+    width: 62%;
+  }
+
+  .last_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .skills_img_last {
+    margin: 0;
   }
 }
+
+
+
+/* general styles */
+.tools button {
+  height: 32px;
+  background-color: #eef8f3;
+  color: #5f6361;
+  border: 0;
+  border-radius: 4px;
+  padding: 8px, 12px, 8px, 12px;
+  font-family: 'Inter UI', sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_frame {
+    height: 40px;
+    background-color: white;
+    color: #36b37e;
+    border: 0;
+    border-radius: 4px;
+    font-family: 'Inter UI', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px;
+  }
+
+  a {
+    text-decoration: none;
+  }
