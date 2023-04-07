@@ -98,11 +98,11 @@ hideHeader();
         // centerpopup();
         const mbversionelem = `
         <div class="contentmb">
-        <img class="closeMMmb" src="images/popup_mobile/icon.svg">
+        <img class="closeMMmb" src="images/popup_mobile/Icon.svg">
         <video class="imagemb" controls autoplay>
-        <source src="../images/recent_works/course.mp4" type="video/webm">
-        <source src="../images/recent_works/course.mp4" type="video/mp4">
-        <img src="../images/recent_works/course.png" alt="Imagen de muestra">
+        <source src="images/recent_works/course.mp4" type="video/webm">
+        <source src="images/recent_works/course.mp4" type="video/mp4">
+        <img src="images/recent_works/course.png" alt="Imagen de muestra">
       </video>
       
         <h2 class="titlemb" >Development course web page</h2>
@@ -190,12 +190,12 @@ hideHeader();
 
         const mbversionelem = `
         <div class="contentmb">
-        <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
+        <img class="closeMMmb" src="images/popup_mobile/Icon.svg">
         <div>
         <video class="imagemb" controls autoplay>
-        <source src="../images/recent_works/budget.mp4" type="video/webm">
-        <source src="../images/recent_works/budget.mp4" type="video/mp4">
-        <img src="../images/recent_works/budget.png" alt="Imagen de muestra">
+        <source src="images/recent_works/budget.mp4" type="video/webm">
+        <source src="images/recent_works/budget.mp4" type="video/mp4">
+        <img src="images/recent_works/budget.png" alt="Imagen de muestra">
       </video>
         </div>
         <h2 class="titlemb" >Budget</h2>
@@ -279,12 +279,12 @@ showHeader();
   
           const mbversionelem = `
           <div class="contentmb">
-          <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
+          <img class="closeMMmb" src="images/popup_mobile/Icon.svg">
           <div>
           <video class="imagemb" controls autoplay>
-          <source src="../images/recent_works/todolist.mp4" type="video/webm">
-        <source src="../images/recent_works/todolist.mp4" type="video/mp4">
-        <img src="../images/recent_works/todolist.png" alt="Imagen de muestra">
+          <source src="images/recent_works/todolist.mp4" type="video/webm">
+        <source src="images/recent_works/todolist.mp4" type="video/mp4">
+        <img src="images/recent_works/todolist.png" alt="Imagen de muestra">
       </video>
           </div>
           <h2 class="titlemb" >To-Do list</h2>
@@ -364,12 +364,12 @@ break;
   
           const mbversionelem = `
           <div class="contentmb">
-          <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
+          <img class="closeMMmb" src="images/popup_mobile/Icon.svg">
           <div>
           <video class="imagemb" controls autoplay>
-          <source src="../images/recent_works/math.mp4" type="video/webm">
-        <source src="../images/recent_works/math.mp4" type="video/mp4">
-        <img src="../images/recent_works/math.png" alt="Imagen de muestra">
+          <source src="images/recent_works/math.mp4" type="video/webm">
+        <source src="images/recent_works/math.mp4" type="video/mp4">
+        <img src="images/recent_works/math.png" alt="Imagen de muestra">
       </video>
           </div>
           <h2 class="titlemb" >Math magicians</h2>
@@ -452,12 +452,12 @@ break;
   
           const mbversionelem = `
           <div class="contentmb">
-          <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
+          <img class="closeMMmb" src="images/popup_mobile/Icon.svg">
           <div>
           <video class="imagemb" controls autoplay>
-          <source src="../images/recent_works/coin.mp4" type="video/webm">
-        <source src="../images/recent_works/coin.mp4" type="video/mp4">
-        <img src="../images/recent_works/coin.png" alt="Imagen de muestra">
+          <source src="images/recent_works/coin.mp4" type="video/webm">
+        <source src="images/recent_works/coin.mp4" type="video/mp4">
+        <img src="images/recent_works/coin.png" alt="Imagen de muestra">
       </video>
           </div>
           <h2 class="titlemb" >Coin stats</h2>
@@ -540,12 +540,12 @@ break;
   
           const mbversionelem = `
           <div class="contentmb">
-          <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
+          <img class="closeMMmb" src="images/popup_mobile/Icon.svg">
           <div>
           <video class="imagemb" controls autoplay>
-          <source src="../images/recent_works/book.mp4" type="video/webm">
-        <source src="../images/recent_works/book.mp4" type="video/mp4">
-        <img src="../images/recent_works/book.png" alt="Imagen de muestra">
+          <source src="images/recent_works/book.mp4" type="video/webm">
+        <source src="images/recent_works/book.mp4" type="video/mp4">
+        <img src="images/recent_works/book.png" alt="Imagen de muestra">
       </video>
           </div>
           <h2 class="titlemb" >Awesome books</h2>
@@ -626,12 +626,12 @@ break;
   
           const mbversionelem = `
           <div class="contentmb">
-          <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
+          <img class="closeMMmb" src="images/popup_mobile/Icon.svg">
           <div>
           <video class="imagemb" controls autoplay>
-          <source src="../images/recent_works/board.mp4" type="video/webm">
-        <source src="../images/recent_works/board.mp4" type="video/mp4">
-        <img src="../images/recent_works/board.png" alt="Imagen de muestra">
+          <source src="images/recent_works/board.mp4" type="video/webm">
+        <source src="images/recent_works/board.mp4" type="video/mp4">
+        <img src="images/recent_works/board.png" alt="Imagen de muestra">
       </video>
           </div>
           <h2 class="titlemb" >Leader Board</h2>

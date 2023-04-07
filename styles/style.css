@@ -907,8 +907,8 @@
   }
 
   .wrap_desktop {
-    width: 50%;
-    height: 60%;
+    width: 50vh;
+    height: 55%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
