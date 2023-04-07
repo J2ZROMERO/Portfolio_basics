@@ -694,12 +694,3 @@ const disableNavbar = (element) => {
   const desktopHeader = document.querySelector('.desktop_header');
   desktopHeader.style.display = 'none';
 };
-
-// const header = document.querySelector('.desktop_header');
-// window.addEventListener('scroll', () => {
-//   if (window.scrollY > -1) {
-//     header.style.boxShadow = '0px 15px 10px -15px green';
-//   } else {
-//     header.style.boxShadow = 'none';
-//   }
-// });

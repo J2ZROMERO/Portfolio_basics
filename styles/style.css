@@ -208,23 +208,23 @@
     width: 100%;
     justify-content: center;
     flex-direction: column;
+    height: auto;
+    gap: 40px;
     align-items: center;
   }
 
   .recent_works_elements {
     width: 100%;
-    height: 100%;
+    min-height: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 20%;
   }
 
   .recent_works_element {
     width: 327px;
-    height: 474px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -250,11 +250,13 @@
     font-family: 'Inter UI', sans-serif;
   }
 
+  
   .works_buttons {
     padding-left: 0;
-    margin-bottom: 7%;
     width: 100%;
-    height: 32px;
+    /* height: 32px; */
+    height: auto;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
   }
@@ -265,7 +267,6 @@
 
   .works_title {
     width: 295px;
-    height: 57px;
     margin: 0;
     font-weight: bold;
     font-size: 24px;
@@ -290,11 +291,14 @@
 
   .works_button_action {
     width: 100%;
-    height: 45%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: wrap;
     justify-content: center;
     align-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5%;
   }
 
   .see_project {
@@ -308,22 +312,28 @@
     text-align: center;
     line-height: 24px;
     font-family: 'Inter UI', sans-serif;
+    margin: 3% 0 4% 0;
   }
 
   /* languages */
 
   .languages_buttons {
     padding-left: 0;
-    width: 100%;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .skills_main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
   }
 
   .languages_main {
     width: 100%;
-    height: 360px;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -366,7 +376,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 50%;
     justify-content: center;
     align-content: start;
   }
@@ -389,8 +398,6 @@
 
   .framework_buttons {
     padding-left: 0;
-    width: 300px;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -399,14 +406,12 @@
 
   .framework_main {
     width: 100%;
-    height: 360px;
     display: flex;
     justify-content: center;
   }
 
-  .framework_section {
+ .skills_section, .languages_section,.framework_section {
     width: 327px;
-    height: 352px;
     display: flex;
     flex-direction: column;
     border-radius: 11px;
@@ -415,7 +420,6 @@
 
   .framework_img {
     width: 100%;
-    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -449,20 +453,27 @@
 
 
   /* skills */
+.skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  margin-bottom: 15%;
+}
 
   .skills_buttons {
     padding-left: 0;
     display: flex;
-    width: 320px;
-    height: 40px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
 
+
   .skills_section {
     width: 327px;
-    height: 352px;
     display: flex;
     flex-direction: column;
     border-radius: 11px;
@@ -471,7 +482,6 @@
 
   .skills_img {
     width: 100%;
-    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -536,17 +546,19 @@
     flex-wrap: wrap;
     justify-content: center;
     background-image: url(../images/middle_section/illustration-\ about\ me-\ mobile.svg);
-    background-position-x: right;
+    background-repeat: no-repeat;
+    background-position: center -2%;
+    padding-top: 10%;
   }
 
   .about_section {
     width: 327px;
-    height: 379px;
     display: flex;
     flex-direction: column;
     border-radius: 11px;
     justify-content: end;
     align-items: center;
+    margin-bottom: 30%;
   }
 
   .about_button {
@@ -592,14 +604,13 @@
 
   .opinion_main {
     width: 100%;
-    height: 360px;
     display: flex;
     justify-content: center;
   }
 
   .opinion_section {
     width: 327px;
-    height: 352px;
+    padding-top: 30%;
     display: flex;
     flex-direction: column;
     border-radius: 11px;
@@ -781,6 +792,25 @@
   }
   .wrap_desktop_mob {
     height: 100%;
+  }
+  #works_start{ 
+    margin-bottom: 20%;
+  }
+  .mob_img{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .button_framemb {
+    height: 40px;
+    background-color: white;
+    color: #36b37e;
+    border: 0;
+    border-radius: 4px;
+    font-family: 'Inter UI', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
   }
 }
 
@@ -1067,7 +1097,6 @@ margin-right: 3%;
     border: 1px solid #c1c7d0;
     border-radius: 8px;
     width: 358px;
-    min-height: 352px;
     margin-top: 3%;
   }
 
@@ -1463,3 +1492,8 @@ margin-right: 3%;
     color: #4d8874;
     font-weight: 600;
   }
+  p{
+    text-align: justify;
+  }
+
+  

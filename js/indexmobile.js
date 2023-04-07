@@ -41,12 +41,10 @@ document.querySelector('.portfolio_go').addEventListener('click', () => {
   menu.style.display = 'none';
   mobileVersion.style.visibility = 'visible';
   head.style.visibility = 'visible';
-
   window.onscroll = () => { };
-  window.scroll({
-    top: 700,
-    behavior: 'smooth',
-  });
+  
+  const workSection = document.querySelector('#works_start');
+      workSection.scrollIntoView({ behavior: 'smooth' }); // scroll to the About section
 });
 
 document.querySelector('.contact_go').addEventListener('click', () => {
@@ -57,10 +55,8 @@ document.querySelector('.contact_go').addEventListener('click', () => {
   mobileVersion.style.visibility = 'visible';
   head.style.visibility = 'visible';
   window.onscroll = () => { };
-  window.scroll({
-    top: 6500,
-    behavior: 'smooth',
-  });
+  const formSection = document.querySelector('#formmb');
+      formSection.scrollIntoView({ behavior: 'smooth' }); // scroll to the About section
 });
 
 document.querySelector('.about_go').addEventListener('click', () => {
@@ -71,10 +67,8 @@ document.querySelector('.about_go').addEventListener('click', () => {
   mobileVersion.style.visibility = 'visible';
   head.style.visibility = 'visible';
   window.onscroll = () => { };
-  window.scroll({
-    top: 5700,
-    behavior: 'smooth',
-  });
+  const aboutSection = document.querySelector('#about');
+      aboutSection.scrollIntoView({ behavior: 'smooth' }); // scroll to the About section
 });
 
 
@@ -87,82 +81,14 @@ function css(variable, style) {
 
 function popupMobil(botton, work) {
   switch (work) {
-    case 'todolist':
+    case 'responsive':
       botton.addEventListener('click', () => {
         const section = document.createElement('section');
-        section.className = 'container';
+        section.className = 'containermb';
 hideHeader();
         css(section, {
           width: '375px',
-          height: '882px',
-          background: '#C1C7D0',
-
-          display: 'flex',
-          'justify-content': 'center',
-          'align-items': 'center',
-        });
-
-        const mbversionelem = `
-  <div class="content" style="box-sizing: border-box;display: flex;flex-direction: column;align-items: flex-start;padding: 16px;gap: 12px;width: 343px;height: 836px;top: 20px;background: rgb(255, 255, 255);border: 1px solid rgb(223, 225, 230);border-radius: 16px;justify-content: space-between;"><img class="closeMM" src="images/popup_mobile/Icon.svg" style="position: absolute; margin-left: 276px; margin-top: 21px; cursor: pointer;">
-  <iframe class="image" src="images/recent_works/todolist.mp4" style="height:50%"> </iframe>
-  <h2 class="title" style="width: 259px;height: +;font-style: normal;font-weight: 600;font-size: 32px;line-height: 44px;color: rgb(23, 43, 77);margin: 0px;">To-do list</h2>
-  <ul class="works_buttons" style="list-style: none; display: flex; flex-direction: row; align-items: center; padding: 0px; gap: 8px; margin: 0px; width: 246px; height: 32px;">
-  <li class="tools"><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
-  <span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">Ruby on rails</span>
-  </button></li><li><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
-  <span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">css</span></button>
-  </li><li><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
-  <span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">Javascript</span></button></li></ul>
-  <p style="width: 311px;font-family: &quot;Inter UI&quot;, sans-serif;font-style: normal;font-weight: 400;font-size: 16px;line-height: 24px;color: rgb(52, 69, 99);margin: 0px;">Use this project as a tool for remembering your daily tasks, confirming, editing, remove are actions you can do to tasks, your data is saved in the LocalStorage so every time you open or refresh the page all changes will be present.</p>
-  <ul class="buttons_action" style="width: 311px; height: 56px; list-style: none; display: flex; justify-content: space-between; padding: 0px;">
-  <li><a href="https://j2zromero.github.io/To-do-list/dist" style="text-decoration: none;"><button class="live" style="display: flex; flex-direction: row; align-items: flex-start; padding: 12px 0px; gap: 12px; justify-content: center; width: 141px; height: 48px; border: 0px; background: rgb(54, 179, 127); border-radius: 4px;"><span class="see" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span>
-  <img src="images/popup_mobile/IconExport.svg"></button></a></li><li><a href="https://github.com/J2ZROMERO/To-do-list" style="text-decoration: none;"><button class="source" style="display: flex; flex-direction: row; align-items: flex-start; padding: 12px 0px; gap: 12px; justify-content: center; width: 141px; height: 48px; border: 0px; background: rgb(54, 179, 127); border-radius: 4px;">
-  <span class="see P" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See source</span><img src="images/popup_mobile/IconGitHub.svg"></button></a>
-  </li></ul></div>
-  `;
-        section.innerHTML = mbversionelem;
-
-        const mobileVersion = document.querySelector('.mobile_version');
-        const mobileVE = [];
-
-        while (mobileVersion.hasChildNodes()) {
-          mobileVE.push(mobileVersion.firstChild);
-          mobileVersion.removeChild(mobileVersion.firstChild);
-        }
-        document.body.removeChild(mobileVersion);
-        document.body.appendChild(section);
-
-        window.scroll({
-          top: 0,
-          behavior: 'auto',
-        });
-
-        document.querySelector('.closeMM').addEventListener('click', () => {
-          document.body.removeChild(section);
-showHeader();
-          
-
-          document.body.appendChild(mobileVersion);
-          for (let i = 0; i <= mobileVE.length - 1; i += 1) {
-            mobileVersion.appendChild(mobileVE[i]);
-          }
-
-          window.scroll({
-            top: 700,
-            behavior: 'auto',
-          });
-        });
-      });
-
-      break;
-    case 'responsivewp':
-      botton.addEventListener('click', () => {
-        const section = document.createElement('section');
-        section.className = 'container';
-hideHeader();
-        css(section, {
-          width: '375px',
-          height: '882px',
+          height: '100%',
           background: '#C1C7D0',
 
           display: 'flex',
@@ -171,22 +97,41 @@ hideHeader();
         });
         // centerpopup();
         const mbversionelem = `
-  <div class="content" style="box-sizing: border-box;display: flex;flex-direction: column;align-items: flex-start;padding: 16px;gap: 12px;width: 343px;height: 836px;top: 20px;background: rgb(255, 255, 255);border: 1px solid rgb(223, 225, 230);border-radius: 16px;justify-content: space-between;"><img class="closeMM" src="images/popup_mobile/Icon.svg" style="position: absolute; margin-left: 276px; margin-top: 21px; cursor: pointer;">
-  <iframe class="image" src="images/recent_works/course.mp4" style="height:50%"> </iframe>
-  <h2 class="title" style="width: 259px;height: +;font-style: normal;font-weight: 600;font-size: 32px;line-height: 44px;color: rgb(23, 43, 77);margin: 0px;">Development course web page</h2>
-  <ul class="works_buttons" style="list-style: none; display: flex; flex-direction: row; align-items: center; padding: 0px; gap: 8px; margin: 0px; width: 246px; height: 32px;">
-  <li class="tools"><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
-  <span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">Ruby on rails</span>
-  </button></li><li><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
-  <span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">css</span></button>
-  </li><li><button class="wb_action" style="padding: 8px 12px; height: 32px; font-style: normal; font-weight: 600; letter-spacing: 0.03em; color: rgb(58, 74, 66); background-color: rgb(238, 248, 243); border: 0px; border-radius: 4px; font-family: &quot;Inter UI&quot;, sans-serif;">
-  <span class="tol" style="width: 79px; height: 16px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; line-height: 16px; letter-spacing: 0.03em; color: rgb(58, 74, 66);">Javascript</span></button></li></ul>
-  <p style="width: 311px;font-family: &quot;Inter UI&quot;, sans-serif;font-style: normal;font-weight: 400;font-size: 16px;line-height: 24px;color: rgb(52, 69, 99);margin: 0px;">Use a responsive web page, to add several sections to your web page and show activities like, courses, events, concerts, etc.</p>
-  <ul class="buttons_action" style="width: 311px; height: 56px; list-style: none; display: flex; justify-content: space-between; padding: 0px;">
-  <li><a href="https://j2zromero.github.io/Responsive-webPage/" style="text-decoration: none;"><button class="live" style="display: flex; flex-direction: row; align-items: flex-start; padding: 12px 0px; gap: 12px; justify-content: center; width: 141px; height: 48px; border: 0px; background: rgb(54, 179, 127); border-radius: 4px;"><span class="see" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span>
-  <img src="images/popup_mobile/IconExport.svg"></button></a></li><li><a href="https://github.com/J2ZROMERO/Responsive-webPage" style="text-decoration: none;"><button class="source" style="display: flex; flex-direction: row; align-items: flex-start; padding: 12px 0px; gap: 12px; justify-content: center; width: 141px; height: 48px; border: 0px; background: rgb(54, 179, 127); border-radius: 4px;">
-  <span class="see P" style="width: 78px; height: 24px; font-family: &quot;Inter UI&quot;, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See source</span><img src="images/popup_mobile/IconGitHub.svg"></button></a>
-  </li></ul></div>
+        <div class="contentmb">
+        <img class="closeMMmb" src="images/popup_mobile/icon.svg">
+        <iframe class="imagemb" src="images/recent_works/course.mp4"></iframe>
+
+        <h2 class="titlemb" >Development course web page</h2>
+        <ul class="works_buttonsmb">
+        
+        
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">CSS</span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">HTML</span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">GitHub pages</span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">ES6<span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">External typography</span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Animations</span></button></li>
+        
+        </ul>
+        <p class="textmb">Use a responsive web page, to add several sections to your web page and show activities like, courses, events, concerts, etc.</p>
+
+        <ul class="buttons_actionmb">
+        <li>
+        <a href="https://j2zromero.github.io/Responsive-webPage/" target='_blanck'>
+        <button class="livemb">
+        <span class="seemb">See Live</span>
+        <img src="images/popup_mobile/IconExport.svg"></button></a>
+        </li>
+
+        <li>
+        <a href="https://github.com/J2ZROMERO/Responsive-webPage" target='_blanck'>
+        <button class="sourcemb">
+        <span class="seemb Pmb">See source</span>
+        <img src="images/popup_mobile/IconGitHub.svg"></button></a>
+        </li>
+        </ul>
+        
+        </div>
   `;
         section.innerHTML = mbversionelem;
 
@@ -206,7 +151,7 @@ hideHeader();
           behavior: 'auto',
         });
 
-        document.querySelector('.closeMM').addEventListener('click', () => {
+        document.querySelector('.closeMMmb').addEventListener('click', () => {
           document.body.removeChild(section);
           showHeader();
   
@@ -222,7 +167,506 @@ hideHeader();
         });
       });
       break;
+    
+    case 'budget':
 
+      botton.addEventListener('click', () => {
+        const section = document.createElement('section');
+        section.className = 'containermb';
+hideHeader();
+        css(section, {
+          width: '375px',
+          height: '100%',
+          background: '#C1C7D0',
+
+          display: 'flex',
+          'justify-content': 'center',
+          'align-items': 'center',
+        });
+
+        const mbversionelem = `
+        <div class="contentmb">
+        <div>
+        <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
+        <iframe class="imagemb" src="../images/recent_works/budget.mp4"> </iframe>
+        </div>
+        <h2 class="titlemb" >Budget</h2>
+        <ul class="works_buttonsmb">
+        
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Rails</span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Ruby</span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Batchfile</span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">MVC model</span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">ES6<span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Linters</span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Shell</span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">RSpec</span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Render</span></button></li>
+        <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Device</span></button></li>
+        
+        
+        </ul>
+        <p class="textmb">Create your categories and add some transactions, the web cache will save your credentials and the database of your recordings.</p>
+        <ul class="buttons_actionmb">
+        <li>
+        <a href="https://github.com/J2ZROMERO/Budget_app" target='_blanck'>
+        <button class="livemb">
+        <span class="seemb">See Live</span>
+        <img src="images/popup_mobile/IconExport.svg"></button></a></li>
+
+        <li><a href="https://budget-app-v1.onrender.com/" target='_blanck'>
+        <button class="sourcemb">
+        <span class="seemb Pmb">See source</span>
+        <img src="images/popup_mobile/IconGitHub.svg"></button></a>
+        </li></ul></div>
+  `;
+        section.innerHTML = mbversionelem;
+
+        const mobileVersion = document.querySelector('.mobile_version');
+        const mobileVE = [];
+
+        while (mobileVersion.hasChildNodes()) {
+          mobileVE.push(mobileVersion.firstChild);
+          mobileVersion.removeChild(mobileVersion.firstChild);
+        }
+        document.body.removeChild(mobileVersion);
+        document.body.appendChild(section);
+
+        window.scroll({
+          top: 0,
+          behavior: 'auto',
+        });
+
+        document.querySelector('.closeMMmb').addEventListener('click', () => {
+          document.body.removeChild(section);
+showHeader();
+          
+
+          document.body.appendChild(mobileVersion);
+          for (let i = 0; i <= mobileVE.length - 1; i += 1) {
+            mobileVersion.appendChild(mobileVE[i]);
+          }
+
+          window.scroll({
+            top: 700,
+            behavior: 'auto',
+          });
+        });
+      });
+  break;
+    case 'todo':
+        botton.addEventListener('click', () => {
+          const section = document.createElement('section');
+          section.className = 'containermb';
+  hideHeader();
+          css(section, {
+            width: '375px',
+            height: '100%',
+            background: '#C1C7D0',
+  
+            display: 'flex',
+            'justify-content': 'center',
+            'align-items': 'center',
+          });
+  
+          const mbversionelem = `
+          <div class="contentmb">
+          <div>
+          <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
+          <iframe class="imagemb" src="../images/recent_works/todolist.mp4"> </iframe>
+          </div>
+          <h2 class="titlemb" >To-Do list</h2>
+          <ul class="works_buttonsmb">
+          
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Webpack</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">ESlint</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">ES6</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">LocalStorage<span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Jest</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">GitHub pages</span></button></li>
+          
+          </ul>
+          <p class="textmb">Use this project as a tool for remembering your daily tasks, confirming, editing, remove are actions you can do to tasks, your data is saved in the LocalStorage so every time you open or refresh the page all changes will be present.</p>
+          <ul class="buttons_actionmb">
+          <li>
+          <a href="https://j2zromero.github.io/To-do-list/dist/" target='_blanck'>
+          <button class="livemb">
+          <span class="seemb">See Live</span>
+          <img src="images/popup_mobile/IconExport.svg"></button></a></li>
+  
+          <li><a href="https://github.com/J2ZROMERO/To-do-list" target='_blanck'>
+          <button class="sourcemb">
+          <span class="seemb Pmb">See source</span>
+          <img src="images/popup_mobile/IconGitHub.svg"></button></a>
+          </li></ul></div>
+    `;
+          section.innerHTML = mbversionelem;
+  
+          const mobileVersion = document.querySelector('.mobile_version');
+          const mobileVE = [];
+  
+          while (mobileVersion.hasChildNodes()) {
+            mobileVE.push(mobileVersion.firstChild);
+            mobileVersion.removeChild(mobileVersion.firstChild);
+          }
+          document.body.removeChild(mobileVersion);
+          document.body.appendChild(section);
+  
+          window.scroll({
+            top: 0,
+            behavior: 'auto',
+          });
+  
+          document.querySelector('.closeMMmb').addEventListener('click', () => {
+            document.body.removeChild(section);
+  showHeader();
+            
+  
+            document.body.appendChild(mobileVersion);
+            for (let i = 0; i <= mobileVE.length - 1; i += 1) {
+              mobileVersion.appendChild(mobileVE[i]);
+            }
+  
+            window.scroll({
+              top: 700,
+              behavior: 'auto',
+            });
+          });
+        });
+break;  
+
+    case 'math':
+        botton.addEventListener('click', () => {
+          const section = document.createElement('section');
+          section.className = 'containermb';
+  hideHeader();
+          css(section, {
+            width: '375px',
+            height: '100%',
+            background: '#C1C7D0',
+  
+            display: 'flex',
+            'justify-content': 'center',
+            'align-items': 'center',
+          });
+  
+          const mbversionelem = `
+          <div class="contentmb">
+          <div>
+          <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
+          <iframe class="imagemb" src="../images/recent_works/math.mp4"> </iframe>
+          </div>
+          <h2 class="titlemb" >Math magicians</h2>
+          <ul class="works_buttonsmb">
+          
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">ES6<span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">React<span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Big js dependency<span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Webpack</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Netlify</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">React Routes</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Eslint</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">State and props</span></button></li>
+          
+          </ul>
+          <p class="textmb">This is a React calculator that can be used for basic operations. It offers a navbar to navigate through 3 sections and to see more information about it.</p>
+          <ul class="buttons_actionmb">
+          <li>
+          <a href="https://deploy-preview-6--sage-gaufre-cb8c5e.netlify.app/" target='_blanck'>
+          <button class="livemb">
+          <span class="seemb">See Live</span>
+          <img src="images/popup_mobile/IconExport.svg"></button></a></li>
+  
+          <li><a href="https://github.com/J2ZROMERO/Math-Magicians" target='_blanck'>
+          <button class="sourcemb">
+          <span class="seemb Pmb">See source</span>
+          <img src="images/popup_mobile/IconGitHub.svg"></button></a>
+          </li></ul></div>
+    `;
+          section.innerHTML = mbversionelem;
+  
+          const mobileVersion = document.querySelector('.mobile_version');
+          const mobileVE = [];
+  
+          while (mobileVersion.hasChildNodes()) {
+            mobileVE.push(mobileVersion.firstChild);
+            mobileVersion.removeChild(mobileVersion.firstChild);
+          }
+          document.body.removeChild(mobileVersion);
+          document.body.appendChild(section);
+  
+          window.scroll({
+            top: 0,
+            behavior: 'auto',
+          });
+  
+          document.querySelector('.closeMMmb').addEventListener('click', () => {
+            document.body.removeChild(section);
+  showHeader();
+            
+  
+            document.body.appendChild(mobileVersion);
+            for (let i = 0; i <= mobileVE.length - 1; i += 1) {
+              mobileVersion.appendChild(mobileVE[i]);
+            }
+  
+            window.scroll({
+              top: 700,
+              behavior: 'auto',
+            });
+          });
+        });
+break;  
+
+
+    case 'coin':
+        botton.addEventListener('click', () => {
+          const section = document.createElement('section');
+          section.className = 'containermb';
+  hideHeader();
+          css(section, {
+            width: '375px',
+            height: '100%',
+            background: '#C1C7D0',
+  
+            display: 'flex',
+            'justify-content': 'center',
+            'align-items': 'center',
+          });
+  
+          const mbversionelem = `
+          <div class="contentmb">
+          <div>
+          <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
+          <iframe class="imagemb" src="../images/recent_works/coin.mp4"> </iframe>
+          </div>
+          <h2 class="titlemb" >Coin stats</h2>
+          <ul class="works_buttonsmb">
+          
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">React-Redux</span></button></li>
+
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">CSS</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">HTML</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Babel</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">ES6<span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Netlify</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">External API</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">External Official Links</span></button></li>
+          
+          </ul>
+          <p class="textmb">The interface consumes a cryptocurrency API and displays details about various coins while providing links to their official pages for reference.</p>
+          <ul class="buttons_actionmb">
+          <li>
+          <a href="https://phenomenal-donut-e18495.netlify.app/" target='_blanck'>
+          <button class="livemb">
+          <span class="seemb">See Live</span>
+          <img src="images/popup_mobile/IconExport.svg"></button></a></li>
+  
+          <li><a href="https://github.com/J2ZROMERO/Coin-Stats" target='_blanck'>
+          <button class="sourcemb">
+          <span class="seemb Pmb">See source</span>
+          <img src="images/popup_mobile/IconGitHub.svg"></button></a>
+          </li></ul></div>
+    `;
+          section.innerHTML = mbversionelem;
+  
+          const mobileVersion = document.querySelector('.mobile_version');
+          const mobileVE = [];
+  
+          while (mobileVersion.hasChildNodes()) {
+            mobileVE.push(mobileVersion.firstChild);
+            mobileVersion.removeChild(mobileVersion.firstChild);
+          }
+          document.body.removeChild(mobileVersion);
+          document.body.appendChild(section);
+  
+          window.scroll({
+            top: 0,
+            behavior: 'auto',
+          });
+  
+          document.querySelector('.closeMMmb').addEventListener('click', () => {
+            document.body.removeChild(section);
+  showHeader();
+            
+  
+            document.body.appendChild(mobileVersion);
+            for (let i = 0; i <= mobileVE.length - 1; i += 1) {
+              mobileVersion.appendChild(mobileVE[i]);
+            }
+  
+            window.scroll({
+              top: 700,
+              behavior: 'auto',
+            });
+          });
+        });
+break;  
+
+case 'book':
+        botton.addEventListener('click', () => {
+          const section = document.createElement('section');
+          section.className = 'containermb';
+  hideHeader();
+          css(section, {
+            width: '375px',
+            height: '100%',
+            background: '#C1C7D0',
+  
+            display: 'flex',
+            'justify-content': 'center',
+            'align-items': 'center',
+          });
+  
+          const mbversionelem = `
+          <div class="contentmb">
+          <div>
+          <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
+          <iframe class="imagemb" src="../images/recent_works/book.mp4"> </iframe>
+          </div>
+          <h2 class="titlemb" >Awesome books</h2>
+          <ul class="works_buttonsmb">
+          
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">CSS</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">HTML</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Eslint</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">GitHub pages</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">ES6<span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">LocalStorage</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Luxon library</span></button></li>
+      
+          
+          </ul>
+          <p class="textmb">Create books, save your data in the local storage, and contact us.</p>
+          <ul class="buttons_actionmb">
+          <li>
+          <a href="https://j2zromero.github.io/Awesome-Books-ES6/" target='_blanck'>
+          <button class="livemb">
+          <span class="seemb">See Live</span>
+          <img src="images/popup_mobile/IconExport.svg"></button></a></li>
+  
+          <li><a href="https://github.com/J2ZROMERO/Awesome-Books-ES6" target='_blanck'>
+          <button class="sourcemb">
+          <span class="seemb Pmb">See source</span>
+          <img src="images/popup_mobile/IconGitHub.svg"></button></a>
+          </li></ul></div>
+    `;
+          section.innerHTML = mbversionelem;
+  
+          const mobileVersion = document.querySelector('.mobile_version');
+          const mobileVE = [];
+  
+          while (mobileVersion.hasChildNodes()) {
+            mobileVE.push(mobileVersion.firstChild);
+            mobileVersion.removeChild(mobileVersion.firstChild);
+          }
+          document.body.removeChild(mobileVersion);
+          document.body.appendChild(section);
+  
+          window.scroll({
+            top: 0,
+            behavior: 'auto',
+          });
+  
+          document.querySelector('.closeMMmb').addEventListener('click', () => {
+            document.body.removeChild(section);
+  showHeader();
+            
+  
+            document.body.appendChild(mobileVersion);
+            for (let i = 0; i <= mobileVE.length - 1; i += 1) {
+              mobileVersion.appendChild(mobileVE[i]);
+            }
+  
+            window.scroll({
+              top: 700,
+              behavior: 'auto',
+            });
+          });
+        });
+break;  
+    case 'board':
+        botton.addEventListener('click', () => {
+          const section = document.createElement('section');
+          section.className = 'containermb';
+  hideHeader();
+          css(section, {
+            width: '375px',
+            height: '100%',
+            background: '#C1C7D0',
+  
+            display: 'flex',
+            'justify-content': 'center',
+            'align-items': 'center',
+          });
+  
+          const mbversionelem = `
+          <div class="contentmb">
+          <div>
+          <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
+          <iframe class="imagemb" src="../images/recent_works/board.mp4"> </iframe>
+          </div>
+          <h2 class="titlemb" >Leader Board</h2>
+          <ul class="works_buttonsmb">
+          
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">CSS</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">HTML</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Eslint</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">GitHub pages</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">ES6<span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">LocalStorage</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Webpack</span></button></li>
+          <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">API</span></button></li>
+          
+          </ul>
+          <p class="textmb">Create and save names by using localstorage as well as scores to them.</p>
+          <ul class="buttons_actionmb">
+          <li>
+          <a href="https://j2zromero.github.io/Leader-board/dist/" target='_blanck'>
+          <button class="livemb">
+          <span class="seemb">See Live</span>
+          <img src="images/popup_mobile/IconExport.svg"></button></a></li>
+  
+          <li><a href="https://github.com/J2ZROMERO/Leader-board" target='_blanck'>
+          <button class="sourcemb">
+          <span class="seemb Pmb">See source</span>
+          <img src="images/popup_mobile/IconGitHub.svg"></button></a>
+          </li></ul></div>
+    `;
+          section.innerHTML = mbversionelem;
+  
+          const mobileVersion = document.querySelector('.mobile_version');
+          const mobileVE = [];
+  
+          while (mobileVersion.hasChildNodes()) {
+            mobileVE.push(mobileVersion.firstChild);
+            mobileVersion.removeChild(mobileVersion.firstChild);
+          }
+          document.body.removeChild(mobileVersion);
+          document.body.appendChild(section);
+  
+          window.scroll({
+            top: 0,
+            behavior: 'auto',
+          });
+  
+          document.querySelector('.closeMMmb').addEventListener('click', () => {
+            document.body.removeChild(section);
+  showHeader();
+            
+  
+            document.body.appendChild(mobileVersion);
+            for (let i = 0; i <= mobileVE.length - 1; i += 1) {
+              mobileVersion.appendChild(mobileVE[i]);
+            }
+  
+            window.scroll({
+              top: 700,
+              behavior: 'auto',
+            });
+          });
+        });
+break;  
     default: null;
   }
 }
@@ -258,28 +702,22 @@ window.addEventListener('load', () => {
 });
 
 // popup mobile
-const seecoursemv = document.querySelector('.seecoursemv');
-const seetodolistmv = document.querySelector('.seetodolistmv');
-popupMobil(seecoursemv, 'todolist');
-popupMobil(seetodolistmv, 'responsivewp');
+const seecoursemb = document.querySelector('.seeresponsivemb');
+const seetodomb = document.querySelector('.seetodomb');
+const seebudgetmb = document.querySelector('.seebudgetmb');
+const seemathmb = document.querySelector('.seemathmb');
+const seecoinmb = document.querySelector('.seecoinmb');
+const seebookmb = document.querySelector('.seebookmb');
+const seeboardmb = document.querySelector('.seeboardmb');
 
-// const centerpopup = () => {
-// const body = document.querySelector('body');
-// css(body, {
-//   display: 'flex',
-//   'justify-content': 'center',
-//   'align-items': 'center',
-// });
-//   disableNavbar();
-// }
+popupMobil(seeboardmb, 'board');
+popupMobil(seebookmb, 'book');
+popupMobil(seecoinmb, 'coin');
+popupMobil(seemathmb, 'math');
+popupMobil(seebudgetmb, 'budget');
+popupMobil(seetodomb, 'todo');
+popupMobil(seecoursemb, 'responsive');
 
-// const exitpopup = () => {
-// const body = document.querySelector('body');
-// css(body, {
-//   margin: '0',
-// });
-//   enableNavbar();
-// }
 
 const hideHeader = () => {
   
@@ -288,7 +726,6 @@ const hideHeader = () => {
   const body = document.querySelector('body');
 css(body, {
   margin: '0px',
-  'background-color': 'red',
   display: 'flex',
   'align-items': 'center',
 });

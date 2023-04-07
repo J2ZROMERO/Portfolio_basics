@@ -24,6 +24,10 @@
     color: red;
   }
   
+  .button_framemb:active {
+    color: red;
+  }
+
   .framework_buttons li button:hover {
     background-color: rgb(199, 202, 199);
     cursor: pointer;
@@ -47,6 +51,7 @@
     color: red;
   }
   
+  .button_framemb:hover,
   .button_languages:hover,
   .button_frame:hover,
   .button_skills:hover {
