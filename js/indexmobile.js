@@ -99,8 +99,11 @@ hideHeader();
         const mbversionelem = `
         <div class="contentmb">
         <img class="closeMMmb" src="images/popup_mobile/icon.svg">
-        <iframe class="imagemb" src="images/recent_works/course.mp4"></iframe>
-
+        <video class="imagemb" controls autoplay>
+        <source src="../images/recent_works/course.mp4" type="video/mp4">
+        <img src="../images/recent_works/course.png" alt="Imagen de muestra">
+      </video>
+      
         <h2 class="titlemb" >Development course web page</h2>
         <ul class="works_buttonsmb">
         
@@ -186,9 +189,12 @@ hideHeader();
 
         const mbversionelem = `
         <div class="contentmb">
-        <div>
         <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
-        <iframe class="imagemb" src="../images/recent_works/budget.mp4"> </iframe>
+        <div>
+        <video class="imagemb" controls autoplay>
+        <source src="../images/recent_works/budget.mp4" type="video/mp4">
+        <img src="../images/recent_works/budget.png" alt="Imagen de muestra">
+      </video>
         </div>
         <h2 class="titlemb" >Budget</h2>
         <ul class="works_buttonsmb">
@@ -271,9 +277,12 @@ showHeader();
   
           const mbversionelem = `
           <div class="contentmb">
-          <div>
           <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
-          <iframe class="imagemb" src="../images/recent_works/todolist.mp4"> </iframe>
+          <div>
+          <video class="imagemb" controls autoplay>
+        <source src="../images/recent_works/todolist.mp4" type="video/mp4">
+        <img src="../images/recent_works/todolist.png" alt="Imagen de muestra">
+      </video>
           </div>
           <h2 class="titlemb" >To-Do list</h2>
           <ul class="works_buttonsmb">
@@ -352,9 +361,12 @@ break;
   
           const mbversionelem = `
           <div class="contentmb">
-          <div>
           <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
-          <iframe class="imagemb" src="../images/recent_works/math.mp4"> </iframe>
+          <div>
+          <video class="imagemb" controls autoplay>
+        <source src="../images/recent_works/math.mp4" type="video/mp4">
+        <img src="../images/recent_works/math.png" alt="Imagen de muestra">
+      </video>
           </div>
           <h2 class="titlemb" >Math magicians</h2>
           <ul class="works_buttonsmb">
@@ -436,9 +448,12 @@ break;
   
           const mbversionelem = `
           <div class="contentmb">
-          <div>
           <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
-          <iframe class="imagemb" src="../images/recent_works/coin.mp4"> </iframe>
+          <div>
+          <video class="imagemb" controls autoplay>
+        <source src="../images/recent_works/coin.mp4" type="video/mp4">
+        <img src="../images/recent_works/coin.png" alt="Imagen de muestra">
+      </video>
           </div>
           <h2 class="titlemb" >Coin stats</h2>
           <ul class="works_buttonsmb">
@@ -503,7 +518,7 @@ break;
         });
 break;  
 
-case 'book':
+    case 'book':
         botton.addEventListener('click', () => {
           const section = document.createElement('section');
           section.className = 'containermb';
@@ -520,9 +535,12 @@ case 'book':
   
           const mbversionelem = `
           <div class="contentmb">
-          <div>
           <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
-          <iframe class="imagemb" src="../images/recent_works/book.mp4"> </iframe>
+          <div>
+          <video class="imagemb" controls autoplay>
+        <source src="../images/recent_works/book.mp4" type="video/mp4">
+        <img src="../images/recent_works/book.png" alt="Imagen de muestra">
+      </video>
           </div>
           <h2 class="titlemb" >Awesome books</h2>
           <ul class="works_buttonsmb">
@@ -602,9 +620,12 @@ break;
   
           const mbversionelem = `
           <div class="contentmb">
-          <div>
           <img class="closeMMmb" src="../images/popup_mobile/Icon.svg">
-          <iframe class="imagemb" src="../images/recent_works/board.mp4"> </iframe>
+          <div>
+          <video class="imagemb" controls autoplay>
+        <source src="../images/recent_works/board.mp4" type="video/mp4">
+        <img src="../images/recent_works/board.png" alt="Imagen de muestra">
+      </video>
           </div>
           <h2 class="titlemb" >Leader Board</h2>
           <ul class="works_buttonsmb">

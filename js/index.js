@@ -38,7 +38,13 @@ function popupDesktop(botton, work) {
         });
         const todolist = `
   <img class="closeMM" src="images/popup_desktop/IconCancel.svg">
-  <iframe class="image" src="images/recent_works/todolist.mp4"></iframe>
+   
+  <video class="image" controls autoplay>
+  <source src="../images/recent_works/todolist.mp4" type="video/mp4">
+  <img src="../images/recent_works/todolist.png" alt="Imagen de muestra">
+</video>
+
+
   <h2 class="title">To-do list</h2>
   <ul class="buttons_action">
   <li><a href="https://j2zromero.github.io/To-do-list/dist/">
@@ -141,7 +147,11 @@ function popupDesktop(botton, work) {
         });
         const course = `
   <img class="closeMM" src="images/popup_desktop/IconCancel.svg">
-  <iframe class="image" src="images/recent_works/course.mp4"></iframe>
+  <video class="image" controls autoplay>
+  <source src="../images/recent_works/course.mp4" type="video/mp4">
+  <img src="../images/recent_works/course.png" alt="Imagen de muestra">
+</video>
+
   <h2 class="title">Development course web page</h2>
   <ul class="buttons_action"><li><a href="https://j2zromero.github.io/Responsive-webPage/" target='_blanck'><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li>
   <li><a href="https://github.com/J2ZROMERO/Responsive-webPage" target='_blanck'><button class="source"><span class="see P">See source</span>
@@ -230,7 +240,11 @@ function popupDesktop(botton, work) {
           });
           const course = `
     <img class="closeMM" src="images/popup_desktop/IconCancel.svg">
-    <iframe class="image" src="../images/recent_works/math.mp4"></iframe>
+    <video class="image" controls autoplay>
+    <source src="../images/recent_works/math.mp4" type="video/mp4">
+    <img src="../images/recent_works/math.png" alt="Imagen de muestra">
+  </video>
+  
     <h2 class="title">Math Magicians</h2>
     <ul class="buttons_action">
     <li><a href="https://deploy-preview-6--sage-gaufre-cb8c5e.netlify.app/" target='_blanck'><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li>
@@ -325,7 +339,11 @@ function popupDesktop(botton, work) {
         });
         const course = `
   <img class="closeMM" src="images/popup_desktop/IconCancel.svg">
-  <iframe class="image" src="../images/recent_works/budget.mp4"></iframe>
+  <video class="image" controls autoplay>
+  <source src="../images/recent_works/budget.mp4" type="video/mp4">
+  <img src="../images/recent_works/budget.png" alt="Imagen de muestra">
+</video>
+
   <h2 class="title">Budget app</h2>
   <ul class="buttons_action">
   <li><a href="https://budget-app-v1.onrender.com/" target='_blanck'><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li>
@@ -420,7 +438,11 @@ function popupDesktop(botton, work) {
         });
         const course = `
   <img class="closeMM" src="images/popup_desktop/IconCancel.svg">
-  <iframe class="image" src="../images/recent_works/coin.mp4"></iframe>
+  <video class="image" controls autoplay>
+  <source src="../images/recent_works/coin.mp4" type="video/mp4">
+  <img src="../images/recent_works/coin.png" alt="Imagen de muestra">
+</video>
+
   <h2 class="title">Coin Stat</h2>
   <ul class="buttons_action">
   <li><a href="https://phenomenal-donut-e18495.netlify.app/" target='_blanck'><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li>
@@ -513,7 +535,11 @@ function popupDesktop(botton, work) {
         });
         const course = `
   <img class="closeMM" src="images/popup_desktop/IconCancel.svg">
-  <iframe class="image" src="../images/recent_works/book.mp4"></iframe>
+  <video class="image" controls autoplay>
+  <source src="../images/recent_works/book.mp4" type="video/mp4">
+  <img src="../images/recent_works/book.png" alt="Imagen de muestra">
+</video>
+
   <h2 class="title">Awesome Books</h2>
   <ul class="buttons_action">
   <li><a href="https://j2zromero.github.io/Awesome-Books-ES6/" target='_blanck'><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li>
@@ -568,7 +594,7 @@ function popupDesktop(botton, work) {
         });
       });
       break;
-      case 'board':
+    case 'board':
       
       botton.addEventListener('click', () => {
         const section = document.createElement('section');
@@ -603,7 +629,11 @@ function popupDesktop(botton, work) {
         });
         const course = `
   <img class="closeMM" src="images/popup_desktop/IconCancel.svg">
-  <iframe class="image" src="../images/recent_works/board.mp4"></iframe>
+  <video class="image" controls autoplay>
+  <source src="../images/recent_works/board.mp4" type="video/mp4">
+  <img src="../images/recent_works/board.png" alt="Imagen de muestra">
+</video>
+
   <h2 class="title">Awesome Books</h2>
   <ul class="buttons_action">
   <li><a href="https://j2zromero.github.io/Leader-board/dist/" target='_blanck'><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li>
