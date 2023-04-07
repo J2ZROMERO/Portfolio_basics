@@ -91,7 +91,7 @@ function popupMobil(botton, work) {
       botton.addEventListener('click', () => {
         const section = document.createElement('section');
         section.className = 'container';
-
+hideHeader();
         css(section, {
           width: '375px',
           height: '882px',
@@ -122,8 +122,6 @@ function popupMobil(botton, work) {
   `;
         section.innerHTML = mbversionelem;
 
-        const head = document.querySelector('.header_mobile');
-        head.style.display = 'none';
         const mobileVersion = document.querySelector('.mobile_version');
         const mobileVE = [];
 
@@ -141,8 +139,8 @@ function popupMobil(botton, work) {
 
         document.querySelector('.closeMM').addEventListener('click', () => {
           document.body.removeChild(section);
-
-          head.style.visibility = 'visible';
+showHeader();
+          
 
           document.body.appendChild(mobileVersion);
           for (let i = 0; i <= mobileVE.length - 1; i += 1) {
@@ -161,7 +159,7 @@ function popupMobil(botton, work) {
       botton.addEventListener('click', () => {
         const section = document.createElement('section');
         section.className = 'container';
-
+hideHeader();
         css(section, {
           width: '375px',
           height: '882px',
@@ -171,7 +169,7 @@ function popupMobil(botton, work) {
           'justify-content': 'center',
           'align-items': 'center',
         });
-
+        // centerpopup();
         const mbversionelem = `
   <div class="content" style="box-sizing: border-box;display: flex;flex-direction: column;align-items: flex-start;padding: 16px;gap: 12px;width: 343px;height: 836px;top: 20px;background: rgb(255, 255, 255);border: 1px solid rgb(223, 225, 230);border-radius: 16px;justify-content: space-between;"><img class="closeMM" src="images/popup_mobile/Icon.svg" style="position: absolute; margin-left: 276px; margin-top: 21px; cursor: pointer;">
   <iframe class="image" src="images/recent_works/course.mp4" style="height:50%"> </iframe>
@@ -192,8 +190,7 @@ function popupMobil(botton, work) {
   `;
         section.innerHTML = mbversionelem;
 
-        const head = document.querySelector('.header_mobile');
-        head.style.display = 'none';
+    
         const mobileVersion = document.querySelector('.mobile_version');
         const mobileVE = [];
 
@@ -211,9 +208,8 @@ function popupMobil(botton, work) {
 
         document.querySelector('.closeMM').addEventListener('click', () => {
           document.body.removeChild(section);
-
-          head.style.visibility = 'visible';
-
+          showHeader();
+  
           document.body.appendChild(mobileVersion);
           for (let i = 0; i <= mobileVE.length - 1; i += 1) {
             mobileVersion.appendChild(mobileVE[i]);
@@ -266,3 +262,45 @@ const seecoursemv = document.querySelector('.seecoursemv');
 const seetodolistmv = document.querySelector('.seetodolistmv');
 popupMobil(seecoursemv, 'todolist');
 popupMobil(seetodolistmv, 'responsivewp');
+
+// const centerpopup = () => {
+// const body = document.querySelector('body');
+// css(body, {
+//   display: 'flex',
+//   'justify-content': 'center',
+//   'align-items': 'center',
+// });
+//   disableNavbar();
+// }
+
+// const exitpopup = () => {
+// const body = document.querySelector('body');
+// css(body, {
+//   margin: '0',
+// });
+//   enableNavbar();
+// }
+
+const hideHeader = () => {
+  
+  const head = document.querySelector('.header_mobile');
+  head.style.display = 'none';
+  const body = document.querySelector('body');
+css(body, {
+  margin: '0px',
+  'background-color': 'red',
+  display: 'flex',
+  'align-items': 'center',
+});
+};
+const showHeader = () => {
+  
+  const head = document.querySelector('.header_mobile');
+  head.style.display = 'block';
+  const body = document.querySelector('body');
+css(body, {
+  margin: '0',
+  'background-color': 'white',
+  display: 'block',
+});
+};
