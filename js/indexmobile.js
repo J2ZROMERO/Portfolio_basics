@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-expressions */
 const header = document.querySelector('header');
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 600) {
+  if (window.scrollY > 50) {
     header.style.boxShadow = '0px 15px 10px -15px gray';
   } else {
     header.style.boxShadow = 'none';
@@ -297,6 +297,8 @@ const showHeader = () => {
   
   const head = document.querySelector('.header_mobile');
   head.style.display = 'block';
+  head.style.position = 'fixed';
+
   const body = document.querySelector('body');
 css(body, {
   margin: '0',

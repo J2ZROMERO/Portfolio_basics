@@ -16,6 +16,12 @@
     border-radius: 0% 0% 10% 9%;
   }
 
+  .header_mobile {
+    position: fixed;
+    width: 380px;
+    background-color: white;
+  }
+
   .ul_quick_acces {
     list-style: none;
     padding: 0;
@@ -85,20 +91,22 @@
     background-repeat: no-repeat;
     background-position: top;
     width: 100%;
-    height: 90%;
+    /* height: 90%; */
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* justify-content: space-around; */
     margin: 0;
-    align-items: center;
+    align-items: self-start;
+    height: 100vh;
   }
 
   .background_main h1 {
     width: 327px;
-    height: 192px;
+    /* height: 192px; */
     font-weight: 700px;
     line-height: 52px;
-    margin: 0;
+    margin: 17% 0 0 0;
     margin-bottom: 12%;
     font-style: normal;
     font-size: 40px;
@@ -116,11 +124,6 @@
     margin: 0;
     margin-bottom: 11%;
     font-family: 'Inter UI', sans-serif;
-  }
-
-  .row_down {
-    height: 6%;
-    margin-top: 9%;
   }
 
   
@@ -155,7 +158,6 @@
     height: 50%;
     display: flex;
     justify-content: space-between;
-    margin-top: 1%;
   }
 
   .logo {
@@ -177,17 +179,18 @@
 
   .social_media_icons {
     list-style-type: none;
-    width: 80%;
-    height: 10%;
+    width: 100%;
+    height: 20%;
     display: flex;
     justify-content: center;
-    margin-left: 6%;
+    /* margin-left: 6%; */
+    align-items: self-end;
+    gap: 8%;
     font-family: 'Inter UI', sans-serif;
   }
 
   .social_media_icons > * {
     height: 27%;
-    margin-right: 6%;
   }
 
   /* start middle content */
@@ -203,8 +206,8 @@
     display: flex;
     list-style-type: none;
     width: 100%;
-    height: 100%;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -216,10 +219,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-  }
-
-  .recent_works_elements > img {
-    margin-bottom: 22%;
+    margin-bottom: 20%;
   }
 
   .recent_works_element {
@@ -241,14 +241,13 @@
 
   .title_header {
     width: 327px;
-    height: 97px;
+  
     line-height: 52px;
     text-align: center;
     vertical-align: center;
     font-weight: bold;
     font-size: 45px;
     font-family: 'Inter UI', sans-serif;
-    margin-bottom: 0%;
   }
 
   .works_buttons {
@@ -780,6 +779,9 @@
   .todolist {
     width: 100%;
   }
+  .wrap_desktop_mob {
+    height: 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -930,9 +932,6 @@ margin-right: 3%;
     flex-grow: 0;
   }
 
-  .row_down {
-    margin-top: 84px;
-  }
 
   .menu_items ul li a {
     text-decoration: none;
