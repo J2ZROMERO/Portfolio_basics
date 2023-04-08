@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 ### ejecute in your terminal git clone "htt:github/portafolio";
 
 
-### [Live demo ](https://j2zromero.github.io/Personal_Portafolio_Web_Site/)
+### [Live demo ](https://j2zromero.github.io/Portfolio/)
 
 
 ## Authors
