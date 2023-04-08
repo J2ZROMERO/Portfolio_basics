@@ -9,7 +9,7 @@
 .image {
   width: 100%;
   border-radius: 8px;
-  height: 60%;
+  max-height: 460px;
 }
 
 .title {
@@ -114,12 +114,14 @@
   width: 100%;
   font-family: sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: rgb(52, 69, 99);
+  color: rgb(90 90 90);
   margin: 2% 0 0;
   text-align: start;
+  text-align: center;
+  margin-bottom: 4%;
 }
 
 /* mobile */
@@ -131,7 +133,7 @@
   align-items: center;
   padding: 16px;
   gap: 12px;
-  min-height: 90vh;
+  min-height: 90%;
   width: 343px;
   top: 20px;
   background: rgb(255, 255, 255);
@@ -150,7 +152,7 @@
 
 .imagemb {
   width: 100%;
-  height: 256px;
+  height: 300px;
 }
 
 .titlemb {
@@ -268,11 +270,13 @@
 
 .containermb {
   width: 375px;
-
-  /* height: 882px; */
-
-  /* background: rgb(193, 199, 208); */
+height: 100vh;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+}
+
+.headerm {
+  height: 8%;
 }

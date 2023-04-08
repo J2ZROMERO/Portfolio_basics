@@ -8,6 +8,9 @@
     font-family: "Inter", sans-serif !important;
   }
 
+  body {
+    margin: 0;
+  }
   .quick_acces {
     display: none;
     width: 375px;
@@ -815,6 +818,13 @@
     font-weight: bold;
     cursor: pointer;
   }
+  .textm {
+    padding: 0 5% 0 5%;
+    font-weight: 600;
+    color: #5f6361;
+    line-height: 20px;
+    font-family: "Inter", sans-serif !important; 
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -984,6 +994,8 @@
     margin: 2% 1.5% 2% 1.5%;
     flex-wrap: wrap;
     align-items: flex-end;
+    justify-content: center;
+    align-items: center;
   }
 
   #portofolio_section {
@@ -1231,6 +1243,10 @@
 
   .contenedor_imagen {
     max-height: 265px;
+    min-height: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .about_main {
@@ -1435,6 +1451,7 @@
 
   .todolist {
     width: 100%;
+    height: 256px;
   }
 
   .skills_main {
@@ -1452,6 +1469,13 @@
   .skills_img_last {
     margin: 0;
   }
+
+  .textd {
+    padding: 0 5% 0 5%;
+    font-weight: 500;
+    color: #5f6361;
+    font-family: "Inter", sans-serif !important;
+  }
 }
 
 
@@ -1465,8 +1489,9 @@
   border-radius: 4px;
   padding: 8px, 12px, 8px, 12px;
   font-family: 'Inter UI', sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   display: flex;
+  font-size: 15px;
   justify-content: center;
   align-items: center;
 }

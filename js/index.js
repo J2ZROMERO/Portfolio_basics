@@ -26,9 +26,8 @@ function popupDesktop(botton, work) {
           display: 'flex',
           'flex-wrap': 'wrap',
           padding: '16px',
-          gap: '9px',
           width: '67vh',
-          height: '87vh',
+          'min-height': '87vh',
           top: '20px',
           background: ' #FFFFFF',
           border: '1px solid #DFE1E6',
@@ -55,6 +54,7 @@ function popupDesktop(botton, work) {
   <button class="source"><span class="see P">See source</span><img src="images/popup_desktop/IconGitHub.svg"></button></a>
   </li>
   </ul>
+  <p class="text">Use this project as a tool to remember your daily tasks. Confirming, editing, and removing are actions you can take with tasks. Your data is saved in LocalStorage, so every time you open or refresh the page, all changes will be present.</p>
   <ul class="works_buttons">
   <li class="tools"><button class="button_work" value="Input Buttom" type="submit">css</button></li>
   <li class="tools"><button class="button_work" value="Input Buttom" type="submit">Webpack</button></li>
@@ -67,7 +67,6 @@ function popupDesktop(botton, work) {
   </button></li>
   
   </ul>
-  <p class="text">Use this project as a tool for remembering your daily tasks, confirming, editing, remove are actions you can do to tasks, your data is saved in the LocalStorage so every time you open or refresh the page all changes will be present.</p>
   
   `;
 
@@ -136,9 +135,8 @@ function popupDesktop(botton, work) {
           display: 'flex',
           'flex-wrap': 'wrap',
           padding: '16px',
-          gap: '9px',
           width: '67vh',
-          height: '87vh',
+          'min-height': '87vh',
           top: '20px',
           background: ' #FFFFFF',
           border: '1px solid #DFE1E6',
@@ -154,10 +152,11 @@ function popupDesktop(botton, work) {
   <img src="images/recent_works/course.png" alt="Imagen de muestra">
 </video>
 
-  <h2 class="title">Development course web page</h2>
+  <h2 class="title">Responsive Web Page</h2>
   <ul class="buttons_action"><li><a href="https://j2zromero.github.io/Responsive-webPage/" target='_blanck'><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li>
   <li><a href="https://github.com/J2ZROMERO/Responsive-webPage" target='_blanck'><button class="source"><span class="see P">See source</span>
   <img src="images/popup_desktop/IconGitHub.svg"></button></a></li></ul>
+  <p class="text">This is an informative and responsive website. The styles, events, and effects make the interaction attractive.</p>
   <ul class="works_buttons">
 
         <li class="tools"><button class="button_work" value="Input Buttom" type="submit">Webpack</button></li>
@@ -167,7 +166,6 @@ function popupDesktop(botton, work) {
         <li class="tools"><button class="button_work" value="Input Buttom" type="submit">ES6</button></li>
   
   </ul>
-  <p class="text">Use a responsive web page, to add several sections to your web page and show activities like, courses, events, concerts, etc.</p>
   
   `;
 
@@ -230,9 +228,8 @@ function popupDesktop(botton, work) {
             display: 'flex',
             'flex-wrap': 'wrap',
             padding: '16px',
-            gap: '9px',
             width: '67vh',
-            height: '87vh',
+           'min-height': '87vh',
             top: '20px',
             background: ' #FFFFFF',
             border: '1px solid #DFE1E6',
@@ -253,6 +250,7 @@ function popupDesktop(botton, work) {
     <li><a href="https://deploy-preview-6--sage-gaufre-cb8c5e.netlify.app/" target='_blanck'><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li>
     <li><a href="https://github.com/J2ZROMERO/Math-Magicians" target='_blanck'><button class="source"><span class="see P">See source</span>
     <img src="images/popup_desktop/IconGitHub.svg"></button></a></li></ul>
+    <p class="text">This is a React calculator that can be used for basic operations. It offers a navbar to navigate through 3 sections and to see more information about it.</p>
     <ul class="works_buttons">
   
     <li class="tools"><button class="button_work" value="Input Buttom" type="submit">Webpack</button></li>
@@ -267,7 +265,6 @@ function popupDesktop(botton, work) {
     <li class="tools"><button class="button_work" value="Input Buttom" type="submit">GitHub pages</button></li>
     
     </ul>
-    <p class="text">This is a React calculator that can be used for basic operations. It offers a navbar to navigate through 3 sections and to see more information about it.</p>
     
     `;
   
@@ -330,9 +327,8 @@ function popupDesktop(botton, work) {
           display: 'flex',
           'flex-wrap': 'wrap',
           padding: '16px',
-          gap: '9px',
           width: '67vh',
-          height: '87vh',
+          'min-height': '87vh',
           top: '20px',
           background: ' #FFFFFF',
           border: '1px solid #DFE1E6',
@@ -353,6 +349,7 @@ function popupDesktop(botton, work) {
   <li><a href="https://budget-app-v1.onrender.com/" target='_blanck'><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li>
   <li><a href="https://github.com/J2ZROMERO/Budget_app" target='_blanck'><button class="source"><span class="see P">See source</span>
   <img src="images/popup_desktop/IconGitHub.svg"></button></a></li></ul>
+  <p class="text">Sign up, confirm, and log in with your credentials. Once you do, you will have access to create your categories and add transactions to them. The website cache will save your credentials and the database of your records.</p>
   <ul class="works_buttons">
 
   <li class="tools"><button class="button_work" value="Input Buttom" type="submit">Rails</button></li>
@@ -367,7 +364,6 @@ function popupDesktop(botton, work) {
                 <li class="tools"><button class="button_work" value="Input Buttom" type="submit">Device</button></li>
   
   </ul>
-  <p class="text">Create your categories and add some transactions, the web cache will save your credentials and the database of your recordings.</p>
   
   `;
 
@@ -430,9 +426,8 @@ function popupDesktop(botton, work) {
           display: 'flex',
           'flex-wrap': 'wrap',
           padding: '16px',
-          gap: '9px',
           width: '67vh',
-          height: '87vh',
+          'min-height': '87vh',
           top: '20px',
           background: ' #FFFFFF',
           border: '1px solid #DFE1E6',
@@ -448,11 +443,12 @@ function popupDesktop(botton, work) {
   <img src="images/recent_works/coin.png" alt="Imagen de muestra">
 </video>
 
-  <h2 class="title">Coin Stat</h2>
+  <h2 class="title">Coin Stats</h2>
   <ul class="buttons_action">
   <li><a href="https://phenomenal-donut-e18495.netlify.app/" target='_blanck'><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li>
   <li><a href="https://github.com/J2ZROMERO/Coin-Stats" target='_blanck'><button class="source"><span class="see P">See source</span>
   <img src="images/popup_desktop/IconGitHub.svg"></button></a></li></ul>
+  <p class="text">By dispatching the state of React-Redux to retrieve data from a cryptocurrency API, the interface offers details about various coins, while providing links to their official pages for reference.</p>
   <ul class="works_buttons">
 
   <li class="tools"><button class="button_work" value="Input Buttom" type="submit">Rails</button></li>
@@ -465,7 +461,6 @@ function popupDesktop(botton, work) {
     <li class="tools"><button class="button_work" value="Input Buttom" type="submit">External API</button></li>
     <li class="tools"><button class="button_work" value="Input Buttom" type="submit">External official links</button></li>
   </ul>
-  <p class="text">The interface consumes a cryptocurrency API and displays details about various coins while providing links to their official pages for reference.</p>
   
   `;
 
@@ -528,9 +523,8 @@ function popupDesktop(botton, work) {
           display: 'flex',
           'flex-wrap': 'wrap',
           padding: '16px',
-          gap: '9px',
           width: '67vh',
-          height: '87vh',
+          'min-height': '87vh',
           top: '20px',
           background: ' #FFFFFF',
           border: '1px solid #DFE1E6',
@@ -552,6 +546,7 @@ function popupDesktop(botton, work) {
   <li><a href="https://j2zromero.github.io/Awesome-Books-ES6/" target='_blanck'><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li>
   <li><a href="https://github.com/J2ZROMERO/Awesome-Books-ES6" target='_blanck'><button class="source"><span class="see P">See source</span>
   <img src="images/popup_desktop/IconGitHub.svg"></button></a></li></ul>
+  <p class="text">Create, remove books, save your data in the local storage, enjoy some style effects and contact us.</p>
   <ul class="works_buttons">
   <li class="tools"><button class="button_work" value="Input Buttom" type="submit">CSS</button></li>
   <li class="tools"><button class="button_work" value="Input Buttom" type="submit">HTML</button></li>
@@ -561,7 +556,6 @@ function popupDesktop(botton, work) {
   <li class="tools"><button class="button_work" value="Input Buttom" type="submit">GitHub pages</button></li>
   <li class="tools"><button class="button_work" value="Input Buttom" type="submit">Luxon library</button></li>
   </ul>
-  <p class="text">Create, remove books, save your data in the local storage, and contact us.</p>
   
   `;
 
@@ -624,9 +618,8 @@ function popupDesktop(botton, work) {
           display: 'flex',
           'flex-wrap': 'wrap',
           padding: '16px',
-          gap: '9px',
           width: '67vh',
-          height: '87vh',
+          'min-height': '87vh',
           top: '20px',
           background: ' #FFFFFF',
           border: '1px solid #DFE1E6',
@@ -642,11 +635,13 @@ function popupDesktop(botton, work) {
   <img src="images/recent_works/board.png" alt="Imagen de muestra">
 </video>
 
-  <h2 class="title">Awesome Books</h2>
+  <h2 class="title">Leader Board</h2>
   <ul class="buttons_action">
   <li><a href="https://j2zromero.github.io/Leader-board/dist/" target='_blanck'><button class="live" style="display: flex; align-items: center; padding: 12px 5px 12px 0px; gap: 2px; height: 37px; border: 0px; background: rgb(54, 179, 127); width: 101px; border-radius: 4px; justify-content: end; cursor: pointer;"><span class="see" style="width: 72px; height: 24px; font-style: normal; font-weight: 500; font-size: 11px; line-height: 24px; text-align: center; letter-spacing: 0.03em; color: rgb(255, 255, 255);">See Live</span><img src="images/popup_desktop/IconExport.svg"></button></a></li>
   <li><a href="https://github.com/J2ZROMERO/Leader-board" target='_blanck'><button class="source"><span class="see P">See source</span>
   <img src="images/popup_desktop/IconGitHub.svg"></button></a></li></ul>
+  <p class="text">Create and save names as well as scores to them, localstorage will save your data.</p>
+  
   <ul class="works_buttons">
   <li class="tools"><button class="button_work" value="Input Buttom" type="submit">CSS</button></li>
     <li class="tools"><button class="button_work" value="Input Buttom" type="submit">HTML</button></li>
@@ -657,7 +652,6 @@ function popupDesktop(botton, work) {
     <li class="tools"><button class="button_work" value="Input Buttom" type="submit">Webpack</button></li>
     <li class="tools"><button class="button_work" value="Input Buttom" type="submit">API</button></li>
   </ul>
-  <p class="text">Create and save names as well as scores to them.</p>
   
   `;
 

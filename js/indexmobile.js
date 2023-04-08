@@ -86,15 +86,6 @@ function popupMobil(botton, work) {
         const section = document.createElement('section');
         section.className = 'containermb';
 hideHeader();
-        css(section, {
-          width: '375px',
-          height: '100%',
-          background: '#C1C7D0',
-
-          display: 'flex',
-          'justify-content': 'center',
-          'align-items': 'center',
-        });
         // centerpopup();
         const mbversionelem = `
         <div class="contentmb">
@@ -106,6 +97,7 @@ hideHeader();
       </video>
       
         <h2 class="titlemb" >Development course web page</h2>
+        <p class="textmb">This is an informative and responsive website. The styles, events, and effects make the interaction attractive.</p>
         <ul class="works_buttonsmb">
         
         
@@ -117,7 +109,6 @@ hideHeader();
         <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Animations</span></button></li>
         
         </ul>
-        <p class="textmb">Use a responsive web page, to add several sections to your web page and show activities like, courses, events, concerts, etc.</p>
 
         <ul class="buttons_actionmb">
         <li>
@@ -150,10 +141,6 @@ hideHeader();
         document.body.removeChild(mobileVersion);
         document.body.appendChild(section);
 
-        window.scroll({
-          top: 0,
-          behavior: 'auto',
-        });
 
         document.querySelector('.closeMMmb').addEventListener('click', () => {
           document.body.removeChild(section);
@@ -164,10 +151,7 @@ hideHeader();
             mobileVersion.appendChild(mobileVE[i]);
           }
 
-          window.scroll({
-            top: 700,
-            behavior: 'auto',
-          });
+       
         });
       });
       break;
@@ -178,15 +162,7 @@ hideHeader();
         const section = document.createElement('section');
         section.className = 'containermb';
 hideHeader();
-        css(section, {
-          width: '375px',
-          height: '100%',
-          background: '#C1C7D0',
-
-          display: 'flex',
-          'justify-content': 'center',
-          'align-items': 'center',
-        });
+      
 
         const mbversionelem = `
         <div class="contentmb">
@@ -199,6 +175,7 @@ hideHeader();
       </video>
         </div>
         <h2 class="titlemb" >Budget</h2>
+        <p class="textmb">Sign up, confirm, and log in with your credentials. Once you do, you will have access to create your categories and add transactions to them. The website cache will save your credentials and the database of your records.</p>
         <ul class="works_buttonsmb">
         
         <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Rails</span></button></li>
@@ -214,7 +191,6 @@ hideHeader();
         
         
         </ul>
-        <p class="textmb">Create your categories and add some transactions, the web cache will save your credentials and the database of your recordings.</p>
         <ul class="buttons_actionmb">
         <li>
         <a href="https://github.com/J2ZROMERO/Budget_app" target='_blanck'>
@@ -240,14 +216,11 @@ hideHeader();
         document.body.removeChild(mobileVersion);
         document.body.appendChild(section);
 
-        window.scroll({
-          top: 0,
-          behavior: 'auto',
-        });
+   
 
         document.querySelector('.closeMMmb').addEventListener('click', () => {
           document.body.removeChild(section);
-showHeader();
+        showHeader();
           
 
           document.body.appendChild(mobileVersion);
@@ -255,10 +228,7 @@ showHeader();
             mobileVersion.appendChild(mobileVE[i]);
           }
 
-          window.scroll({
-            top: 700,
-            behavior: 'auto',
-          });
+       
         });
       });
   break;
@@ -267,16 +237,7 @@ showHeader();
           const section = document.createElement('section');
           section.className = 'containermb';
   hideHeader();
-          css(section, {
-            width: '375px',
-            height: '100%',
-            background: '#C1C7D0',
-  
-            display: 'flex',
-            'justify-content': 'center',
-            'align-items': 'center',
-          });
-  
+      
           const mbversionelem = `
           <div class="contentmb">
           <img class="closeMMmb" src="images/popup_mobile/Icon.svg">
@@ -288,6 +249,7 @@ showHeader();
       </video>
           </div>
           <h2 class="titlemb" >To-Do list</h2>
+          <p class="textmb">Use this project as a tool to remember your daily tasks. Confirming, editing, and removing are actions you can take with tasks. Your data is saved in LocalStorage, so every time you open or refresh the page, all changes will be present.</p>
           <ul class="works_buttonsmb">
           
           <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">Webpack</span></button></li>
@@ -298,7 +260,6 @@ showHeader();
           <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">GitHub pages</span></button></li>
           
           </ul>
-          <p class="textmb">Use this project as a tool for remembering your daily tasks, confirming, editing, remove are actions you can do to tasks, your data is saved in the LocalStorage so every time you open or refresh the page all changes will be present.</p>
           <ul class="buttons_actionmb">
           <li>
           <a href="https://j2zromero.github.io/To-do-list/dist/" target='_blanck'>
@@ -324,11 +285,7 @@ showHeader();
           document.body.removeChild(mobileVersion);
           document.body.appendChild(section);
   
-          window.scroll({
-            top: 0,
-            behavior: 'auto',
-          });
-  
+       
           document.querySelector('.closeMMmb').addEventListener('click', () => {
             document.body.removeChild(section);
   showHeader();
@@ -339,10 +296,7 @@ showHeader();
               mobileVersion.appendChild(mobileVE[i]);
             }
   
-            window.scroll({
-              top: 700,
-              behavior: 'auto',
-            });
+          
           });
         });
 break;  
@@ -352,15 +306,7 @@ break;
           const section = document.createElement('section');
           section.className = 'containermb';
   hideHeader();
-          css(section, {
-            width: '375px',
-            height: '100%',
-            background: '#C1C7D0',
-  
-            display: 'flex',
-            'justify-content': 'center',
-            'align-items': 'center',
-          });
+         
   
           const mbversionelem = `
           <div class="contentmb">
@@ -373,6 +319,7 @@ break;
       </video>
           </div>
           <h2 class="titlemb" >Math magicians</h2>
+          <p class="textmb">This is a React calculator that can be used for basic operations. It uses React Router to navigate between informative and calculator sections.</p>
           <ul class="works_buttonsmb">
           
           <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">ES6<span></button></li>
@@ -385,7 +332,6 @@ break;
           <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">State and props</span></button></li>
           
           </ul>
-          <p class="textmb">This is a React calculator that can be used for basic operations. It offers a navbar to navigate through 3 sections and to see more information about it.</p>
           <ul class="buttons_actionmb">
           <li>
           <a href="https://deploy-preview-6--sage-gaufre-cb8c5e.netlify.app/" target='_blanck'>
@@ -411,10 +357,7 @@ break;
           document.body.removeChild(mobileVersion);
           document.body.appendChild(section);
   
-          window.scroll({
-            top: 0,
-            behavior: 'auto',
-          });
+         
   
           document.querySelector('.closeMMmb').addEventListener('click', () => {
             document.body.removeChild(section);
@@ -426,10 +369,6 @@ break;
               mobileVersion.appendChild(mobileVE[i]);
             }
   
-            window.scroll({
-              top: 700,
-              behavior: 'auto',
-            });
           });
         });
 break;  
@@ -440,15 +379,7 @@ break;
           const section = document.createElement('section');
           section.className = 'containermb';
   hideHeader();
-          css(section, {
-            width: '375px',
-            height: '100%',
-            background: '#C1C7D0',
-  
-            display: 'flex',
-            'justify-content': 'center',
-            'align-items': 'center',
-          });
+   
   
           const mbversionelem = `
           <div class="contentmb">
@@ -461,6 +392,7 @@ break;
       </video>
           </div>
           <h2 class="titlemb" >Coin stats</h2>
+          <p class="textmb">By dispatching the state of React-Redux to retrieve data from a cryptocurrency API, the interface offers details about various coins, while providing links to their official pages for reference.</p>
           <ul class="works_buttonsmb">
           
           <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">React-Redux</span></button></li>
@@ -474,7 +406,6 @@ break;
           <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">External Official Links</span></button></li>
           
           </ul>
-          <p class="textmb">The interface consumes a cryptocurrency API and displays details about various coins while providing links to their official pages for reference.</p>
           <ul class="buttons_actionmb">
           <li>
           <a href="https://phenomenal-donut-e18495.netlify.app/" target='_blanck'>
@@ -500,10 +431,7 @@ break;
           document.body.removeChild(mobileVersion);
           document.body.appendChild(section);
   
-          window.scroll({
-            top: 0,
-            behavior: 'auto',
-          });
+         
   
           document.querySelector('.closeMMmb').addEventListener('click', () => {
             document.body.removeChild(section);
@@ -515,10 +443,7 @@ break;
               mobileVersion.appendChild(mobileVE[i]);
             }
   
-            window.scroll({
-              top: 700,
-              behavior: 'auto',
-            });
+         
           });
         });
 break;  
@@ -528,15 +453,7 @@ break;
           const section = document.createElement('section');
           section.className = 'containermb';
   hideHeader();
-          css(section, {
-            width: '375px',
-            height: '100%',
-            background: '#C1C7D0',
-  
-            display: 'flex',
-            'justify-content': 'center',
-            'align-items': 'center',
-          });
+          
   
           const mbversionelem = `
           <div class="contentmb">
@@ -549,6 +466,7 @@ break;
       </video>
           </div>
           <h2 class="titlemb" >Awesome books</h2>
+          <p class="textmb">Create, remove books, save your data in the local storage, enjoy some style effects and contact us.</p>
           <ul class="works_buttonsmb">
           
           <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">CSS</span></button></li>
@@ -561,7 +479,6 @@ break;
       
           
           </ul>
-          <p class="textmb">Create books, save your data in the local storage, and contact us.</p>
           <ul class="buttons_actionmb">
           <li>
           <a href="https://j2zromero.github.io/Awesome-Books-ES6/" target='_blanck'>
@@ -587,10 +504,7 @@ break;
           document.body.removeChild(mobileVersion);
           document.body.appendChild(section);
   
-          window.scroll({
-            top: 0,
-            behavior: 'auto',
-          });
+        
   
           document.querySelector('.closeMMmb').addEventListener('click', () => {
             document.body.removeChild(section);
@@ -602,10 +516,7 @@ break;
               mobileVersion.appendChild(mobileVE[i]);
             }
   
-            window.scroll({
-              top: 700,
-              behavior: 'auto',
-            });
+          
           });
         });
 break;  
@@ -614,16 +525,6 @@ break;
           const section = document.createElement('section');
           section.className = 'containermb';
   hideHeader();
-          css(section, {
-            width: '375px',
-            height: '100%',
-            background: '#C1C7D0',
-  
-            display: 'flex',
-            'justify-content': 'center',
-            'align-items': 'center',
-          });
-  
           const mbversionelem = `
           <div class="contentmb">
           <img class="closeMMmb" src="images/popup_mobile/Icon.svg">
@@ -635,6 +536,9 @@ break;
       </video>
           </div>
           <h2 class="titlemb" >Leader Board</h2>
+          <p class="textmb">Create and save names as well as scores to them, localstorage will save your data.
+
+          </p>
           <ul class="works_buttonsmb">
           
           <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">CSS</span></button></li>
@@ -647,7 +551,6 @@ break;
           <li class="toolsmb"><button class="wb_actionmb" value="Input Buttom" type="submit"><span class="tolmb">API</span></button></li>
           
           </ul>
-          <p class="textmb">Create and save names by using localstorage as well as scores to them.</p>
           <ul class="buttons_actionmb">
           <li>
           <a href="https://j2zromero.github.io/Leader-board/dist/" target='_blanck'>
@@ -673,11 +576,7 @@ break;
           document.body.removeChild(mobileVersion);
           document.body.appendChild(section);
   
-          window.scroll({
-            top: 0,
-            behavior: 'auto',
-          });
-  
+      
           document.querySelector('.closeMMmb').addEventListener('click', () => {
             document.body.removeChild(section);
   showHeader();
@@ -688,10 +587,6 @@ break;
               mobileVersion.appendChild(mobileVE[i]);
             }
   
-            window.scroll({
-              top: 700,
-              behavior: 'auto',
-            });
           });
         });
 break;  
