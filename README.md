@@ -31,30 +31,72 @@ To get a local copy up and running follow these simple example steps.
 
 ### [Live demo ](https://j2zromero.github.io/Portfolio/)
 
+<!-- AUTHORS -->
+## 👥 Authors <a name="authors"></a>
 
-## Authors
-
-👤 **Author1**
+👤 **JOSE ZEPEDA**
 
 - GitHub: [J2ZROMERO](https://github.com/J2ZROMERO)
 - Twitter: [@JOSEZEPED4](https://twitter.com/JOSEZEPED4)
-- LinkedIn: [JOSE ZEPEDA](https://www.linkedin.com/in/jose-zepeda-733ab91ab/)
+- LinkedIn: [JOSE ZEPEDA](https://www.linkedin.com/in/jose-zromero/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> The next features will be added.
 
 
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/J2ZROMERO/Awesome-Books-ES6/issues).
 
-## Show your support
-
-Give a ⭐️ if you like this project!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- SUPPORT -->
 
-## 📝 License
+## ⭐️ Show your support <a name="support"></a>
 
-This project is [MIT](./LICENSE) licensed.
+> Feel free to share your inquiries to our social links provided and we will help you. Don't forget to gift us a ⭐️
 
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank MICROVERSE for preparing the content to work.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+
+- **Linters are necessary**
+
+  - If you want to have a redable and clean code it is a good option to choose
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/J2ZROMERO/Awesome-Books-ES6/blob/main/LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
